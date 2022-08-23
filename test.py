@@ -1,3 +1,4 @@
+
 # -------------------------------
 # Information About File
 # License
@@ -69,4 +70,9 @@ print(name)
 print(myName)
 print(my_name)
 
-#test
+
+#test python
+print("I love python")
+print("Test")
+print("Test-2")
+
