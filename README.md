@@ -1,2 +1,2 @@
-# Pyhon
-Basics  of  pyhton
+# Python
+Basics  of  python
