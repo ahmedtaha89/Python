@@ -151,3 +151,8 @@ a, b, c = 1, 2, 3
 print(a)
 print(b)
 print(c)
+
+print("Hello\ttest")
+
+print("123\r321")
+print("\x41\x48\x4D\x45\x44 \x54\x41\x48\x41")
