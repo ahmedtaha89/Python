@@ -173,4 +173,27 @@ Last_Name  = "Taha"
 Name = First_Name  +"\n"+ Last_Name
 print(Name)
 print(First_Name +" "+Last_Name)
-print("Hello " + 1)  # Error
+#print("Hello " + 1)  # Error
+
+# -------------
+# -- Strings --
+# -------------
+First_string  = "Test_1"
+Second_string = 'Test_2'
+print(First_string)
+print(Second_string)
+
+
+First_string  = "Test 'one' "
+Second_string = 'Test "two" '
+
+print(First_string)
+print(Second_string)
+
+print('''First
+Second 'Test' "Test"
+Third''')
+
+print("""First
+Second "Test" \\\ 'Test'
+Third""")

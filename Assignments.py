@@ -26,13 +26,13 @@ Country  = "Egypt"
 #------------------------------------------------------------------------------------------#
 
 # تكليف 03  
-print("Name: "      + Name)
+print(" Name: "  + Name  )
 print("Age: "       + Age)
 print("Country: "   +Country)
 
 #------------------------------------------------------------------------------------------#
 # تكليف 04  
-print("Hello, My Name Is "+ Name +  " And Iam " +Age+ " Years Old and I Live in "+Country+  ".")
+print("Hello, My 'Name Is "+ Name +  " And Iam " +Age+ " Years Old and I Live in "+Country+  ".")
 
 #------------------------------------------------------------------------------------------#
 
