@@ -11,6 +11,9 @@
 # -------------------------------
 
 # This is Comment
+from tokenize import Name
+
+
 print("I Love Python")  # This is Inline Comment
 print("Programming")  # I Used This Method Because of Bla Bla Bla
 print("Programming")  # If You Used Test Method Will Through Error
@@ -156,3 +159,18 @@ print("Hello\ttest")
 
 print("123\r321")
 print("\x41\x48\x4D\x45\x44 \x54\x41\x48\x41")
+
+savings = 100
+result = 100 * 1.10 ** 7
+print("I started with $" + str(savings) + " and now have $" + str(result) + ". Awesome!")
+
+# -------------------
+# -- Concatenation --
+# -------------------
+
+First_Name = "Ahmed "
+Last_Name  = "Taha"
+Name = First_Name  +"\n"+ Last_Name
+print(Name)
+print(First_Name +" "+Last_Name)
+print("Hello " + 1)  # Error
