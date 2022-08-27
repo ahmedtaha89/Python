@@ -270,3 +270,64 @@ print(g.upper())
 h = "OSama"
 
 print(h.lower())
+
+# ---------------------
+# -- Strings Methods --
+# ---------------------
+
+# split() =>  separator and step و بتستقبل حاجه اسمها list بتفصل الكلام و ترجعه في    
+# rsplit()
+
+#default
+a = "I Love Python and PHP and MySQL"
+print(a.split())
+
+#separator
+a = "I_Love_Python_and_PHP_and_MySQL"
+print(a.split("_"))
+
+#separator and step  
+a = "I_Love_Python_and_PHP_and_MySQL"
+print(a.split("_" , 3) )
+
+#separator and step  
+a = "I_Love_Python_and_PHP_and_MySQL"
+print(a.rsplit("_" , 3) )
+
+
+
+# center() بتضيف قبل و بعد الكلام اي حاجه انت عايزها 
+# لازم تحدد عدد الحروف اللي هضيفها و عدد حروف الكلمه نفسها 
+# وبعدين الحرف اللي عايز تضيفه 
+
+v = "Ahmed"
+print(v.center(11 ,"*"))
+print(v.center(15, "@"))  # @
+
+
+# count() بتعد الكلمه موجوده كام مره في النص 
+# لازم تحدد الكلمه اللي هيدور عليها 
+# count(word, start, end)) 
+
+f = "I Love Python and PHP Because PHP is Easy"
+print(f.count("PHP"))
+print(f.count("PHP" , 0 , 10))
+
+# swapcase() small => capital بتبدل الحرف 
+g = "I Love Python"
+h = "i lOVE pYTHON"
+
+print(g.swapcase())
+print(h.swapcase())
+
+
+# startswith("char, start , end") بتحقق من اول حرف لو طلع هو بيرجع ترو مكنش فولس
+i = "I Love Python"
+print(i.startswith("I"))
+print(i.startswith("S"))
+print(i.startswith("P", 7, 12))
+
+print("\n")
+print(i.endswith("n"))
+print(i.endswith("S"))
+print(i.endswith("n", 7,-1))
