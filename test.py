@@ -1,25 +1,25 @@
 
-# -------------------------------
-# Information About File
-# License
-# Who Created The File
-# When The File Created
-# Why The File Created
-# Write Beside The Programming Line
-# Write Before The Programming Line
-# Prevent Code From Run
-# -------------------------------
+#  -------------------------------
+#  Information About File
+#  License
+#  Who Created The File
+#  When The File Created
+#  Why The File Created
+#  Write Beside The Programming Line
+#  Write Before The Programming Line
+#  Prevent Code From Run
+#  -------------------------------
 
-# This is Comment
+#  This is Comment
 from tokenize import Name
 
 
-print("I Love Python")  # This is Inline Comment
-print("Programming")  # I Used This Method Because of Bla Bla Bla
-print("Programming")  # If You Used Test Method Will Through Error
+print("I Love Python")  #  This is Inline Comment
+print("Programming")  #  I Used This Method Because of Bla Bla Bla
+print("Programming")  #  If You Used Test Method Will Through Error
 
 
-#this is not comment 
+# this is not comment 
 """
 This is
 Not
@@ -28,52 +28,52 @@ Line
 Comments
 """
 
-# ----------------------------
-# type()
-# All Data in Python is Object
-# ----------------------------
+#  ----------------------------
+#  type()
+#  All Data in Python is Object
+#  ----------------------------
 
-print(type(10))  # int => Integer
-print(type(100))  # int => Integer
-print(type(-50))  # int => Integer
+print(type(10))  #  int => Integer
+print(type(100))  #  int => Integer
+print(type(-50))  #  int => Integer
 
-print(type(100.9))  # float => Floating Point Number
-print(type(1.0950950))  # float => Floating Point Number
-print(type(-100.9595))  # float => Floating Point Number
+print(type(100.9))  #  float => Floating Point Number
+print(type(1.0950950))  #  float => Floating Point Number
+print(type(-100.9595))  #  float => Floating Point Number
 
-print(type("Hello Python"))  # str => String
+print(type("Hello Python"))  #  str => String
 
-print(type([1, 2, 3, 4, 5]))  # list => List
+print(type([1, 2, 3, 4, 5]))  #  list => List
 
-print(type((1, 2, 3, 4, 5)))  # tuple => Tuple
+print(type((1, 2, 3, 4, 5)))  #  tuple => Tuple
 
-print(type({"One": 1, "Two": 2, "Three": 3}))  # dict => Dictionary
+print(type({"One": 1, "Two": 2, "Three": 3}))  #  dict => Dictionary
 
-print(type(2 == 20))  # bool => Boolean
+print(type(2 == 20))  #  bool => Boolean
 
 
-# --------------------------------------
-# -- Variables --
-# ---------------
-# Syntax => [Variable Name] [Assignment Operator] [Value]
-#
-# Name Convention and Rules
-# [1] Can Start With (a-z A-Z) Or Underscore
-# [2] You Cannot With Num Or Special Characters
-# [3] Can Include (0-9) Or Underscore
-# [4] Cannot Include Special Characters
-# [5] Name is Not Like name [ Case Sensitive ]
-# --------------------------------------
+#  --------------------------------------
+#  -- Variables --
+#  ---------------
+#  Syntax => [Variable Name] [Assignment Operator] [Value]
+# 
+#  Name Convention and Rules
+#  [1] Can Start With (a-z A-Z) Or Underscore
+#  [2] You Cannot With Num Or Special Characters
+#  [3] Can Include (0-9) Or Underscore
+#  [4] Cannot Include Special Characters
+#  [5] Name is Not Like name [ Case Sensitive ]
+#  --------------------------------------
 
-name = "Osama Elzero"  # Single Word => Normal
-myName = "Osama Elzero"  # Two Words => camelCase
-my_name = "Osama Elzero"  # Two Words => snake_case
+name = "Osama Elzero"  #  Single Word => Normal
+myName = "Osama Elzero"  #  Two Words => camelCase
+my_name = "Osama Elzero"  #  Two Words => snake_case
 
 print(name)
 print(myName)
 print(my_name)
 
-#variable
+# variable
 x = 5
 y = "test"
 z = 4
@@ -83,34 +83,34 @@ print(y)
 print(z)
 print(x+z)
 
-x = 4       # x is of type int
-x = "Sally" # x is now of type str
+x = 4       #  x is of type int
+x = "Sally" #  x is now of type str
 print(x)
 
 
 
 
-#Camel Case
-#Each word, except the first, starts with a capital letter:
-#myVariableName = "John"
+# Camel Case
+# Each word, except the first, starts with a capital letter:
+# myVariableName = "John"
 
-#Pascal Case
-#Each word starts with a capital letter:
-#MyVariableName = "John"
+# Pascal Case
+# Each word starts with a capital letter:
+# MyVariableName = "John"
 
-#Snake Case
-#Each word is separated by an underscore character:
-#my_variable_name = "John"
+#  Snake Case
+# Each word is separated by an underscore character:
+# my_variable_name = "John"
 
 
-#Many Values to Multiple Variables
-#Python allows you to assign values to multiple variables in one line:
-#Example
-#x, y, z = "Orange", "Banana", "Cherry"
+# Many Values to Multiple Variables
+# Python allows you to assign values to multiple variables in one line:
+# Example
+# x, y, z = "Orange", "Banana", "Cherry"
 
-#print(x)
-#print(y)
-#print(z)
+#  print(x)
+#  print(y)
+#  print(z)
 
 
 x = "Python "
@@ -125,28 +125,28 @@ f="guru"
 
 print(f + str(99))
 
-# Declare a variable and initialize it
+#  Declare a variable and initialize it
 f = 101
 print (f)
-# Global vs. local variables in functions
+#  Global vs. local variables in functions
 def someFunction():
-# global f
+#  global f
     f = 'I am learning Python'
     print (f)
 someFunction()
 print (f)
 
-# ---------------
-# -- Variables --
-# ---------------
-# Source Code : Original Code You Write it in Computer
-# Translation : Converting Source Code Into Machine Language
-# Compilation : Translate Code Before Run Time
-# Run-Time : Period App Take To Executing Commands
-# Interpreted : Code Translated On The Fly During Execution
-# --------------------------------------------------------
+#  ---------------
+#  -- Variables --
+#  ---------------
+#  Source Code : Original Code You Write it in Computer
+#  Translation : Converting Source Code Into Machine Language
+#  Compilation : Translate Code Before Run Time
+#  Run-Time : Period App Take To Executing Commands
+#  Interpreted : Code Translated On The Fly During Execution
+#  --------------------------------------------------------
 
-# Reserved Words
+#  Reserved Words
 help("keywords")
 
 a, b, c = 1, 2, 3
@@ -164,20 +164,20 @@ savings = 100
 result = 100 * 1.10 ** 7
 print("I started with $" + str(savings) + " and now have $" + str(result) + ". Awesome!")
 
-# -------------------
-# -- Concatenation --
-# -------------------
+#  -------------------
+#  -- Concatenation --
+#  -------------------
 
 First_Name = "Ahmed "
 Last_Name  = "Taha"
 Name = First_Name  +"\n"+ Last_Name
 print(Name)
 print(First_Name +" "+Last_Name)
-#print("Hello " + 1)  # Error
+#  print("Hello " + 1)  #  Error
 
-# -------------
-# -- Strings --
-# -------------
+#  -------------
+#  -- Strings --
+#  -------------
 First_string  = "Test_1"
 Second_string = 'Test_2'
 print(First_string)
@@ -199,53 +199,53 @@ Second "Test" \\\ 'Test'
 Third""")
 
 
-# ---------------------------------
-# Strings Indexing & Slicing
-# [1] All Data in Python is Object
-# [2] Object Contain Elements
-# [3] Every Element Has Its Own Index
-# [4] Python Use Zero Based Indexing ( Index Start From Zero )
-# [5] Use Square Brackets To Access Element
-# [6] Enable Accessing Parts Of Strings, Tuples or Lists
-# ---------------------------------
+#  ---------------------------------
+#  Strings Indexing & Slicing
+#  [1] All Data in Python is Object
+#  [2] Object Contain Elements
+#  [3] Every Element Has Its Own Index
+#  [4] Python Use Zero Based Indexing ( Index Start From Zero )
+#  [5] Use Square Brackets To Access Element
+#  [6] Enable Accessing Parts Of Strings, Tuples or Lists
+#  ---------------------------------
 
-# Indexing ( Access Single Item )
+#  Indexing ( Access Single Item )
 
 myString = "Access Single Item"
 print(myString[::4])
 
-# ---------------------
-# -- Strings Methods --
-# ---------------------
+#  ---------------------
+#  -- Strings Methods --
+#  ---------------------
 
-# strip() rstrip() lstrip()
+#  strip() rstrip() lstrip()
 
 a = "    I Love Python    "
 print(a.strip())
 print(a.rstrip())
 print(a.lstrip())
 
-a = "#####I Love Python####"
-print(a.strip("#"))
-print(a.rstrip("#"))
-print(a.lstrip("#"))
+a = "# # # # # I Love Python# # # # "
+print(a.strip("# "))
+print(a.rstrip("# "))
+print(a.lstrip("# "))
 
-a = "@#@#@#I Love Python@#@#@#"
-print(a.strip("@#"))
-print(a.rstrip("@#"))
-print(a.lstrip("@#"))
+a = "@# @# @# I Love Python@# @# @# "
+print(a.strip("@# "))
+print(a.rstrip("@# "))
+print(a.lstrip("@# "))
 
-# title()
+#  title()
 
 b = "I Love 2d Graphics and 3g Technology and python"
 print(b.title())
 
-# capitalize()
+#  capitalize()
 
 b = "I Love 2d Graphics and 3g Technology and python"
 print(b.capitalize())
 
-# zfill
+#  zfill
 
 c, d, e, f = "1", "11", "111", "1111"
 
@@ -259,61 +259,61 @@ print(d.zfill(4))
 print(e.zfill(4))
 print(f.zfill(4))
 
-# upper()
+#  upper()
 
 g = "osama"
 
 print(g.upper())
 
-# lower()
+#  lower()
 
 h = "OSama"
 
 print(h.lower())
 
-# ---------------------
-# -- Strings Methods --
-# ---------------------
+#  ---------------------
+#  -- Strings Methods --
+#  ---------------------
 
-# split() =>  separator and step و بتستقبل حاجه اسمها list بتفصل الكلام و ترجعه في    
-# rsplit()
+#  split() =>  separator and step و بتستقبل حاجه اسمها list بتفصل الكلام و ترجعه في    
+#  rsplit()
 
-#default
+#  default
 a = "I Love Python and PHP and MySQL"
 print(a.split())
 
-#separator
+#  separator
 a = "I_Love_Python_and_PHP_and_MySQL"
 print(a.split("_"))
 
-#separator and step  
+#  separator and step  
 a = "I_Love_Python_and_PHP_and_MySQL"
 print(a.split("_" , 3) )
 
-#separator and step  
+#  separator and step  
 a = "I_Love_Python_and_PHP_and_MySQL"
 print(a.rsplit("_" , 3) )
 
 
 
-# center() بتضيف قبل و بعد الكلام اي حاجه انت عايزها 
-# لازم تحدد عدد الحروف اللي هضيفها و عدد حروف الكلمه نفسها 
-# وبعدين الحرف اللي عايز تضيفه 
+#  center() بتضيف قبل و بعد الكلام اي حاجه انت عايزها 
+#  لازم تحدد عدد الحروف اللي هضيفها و عدد حروف الكلمه نفسها 
+#  وبعدين الحرف اللي عايز تضيفه 
 
 v = "Ahmed"
 print(v.center(11 ,"*"))
-print(v.center(15, "@"))  # @
+print(v.center(15, "@"))  #  @
 
 
-# count() بتعد الكلمه موجوده كام مره في النص 
-# لازم تحدد الكلمه اللي هيدور عليها 
-# count(word, start, end)) 
+#  count() بتعد الكلمه موجوده كام مره في النص 
+#  لازم تحدد الكلمه اللي هيدور عليها 
+#  count(word, start, end)) 
 
 f = "I Love Python and PHP Because PHP is Easy"
 print(f.count("PHP"))
 print(f.count("PHP" , 0 , 10))
 
-# swapcase() small => capital بتبدل الحرف 
+#  swapcase() small => capital بتبدل الحرف 
 g = "I Love Python"
 h = "i lOVE pYTHON"
 
@@ -321,13 +321,112 @@ print(g.swapcase())
 print(h.swapcase())
 
 
-# startswith("char, start , end") بتحقق من اول حرف لو طلع هو بيرجع ترو مكنش فولس
+#  startswith("char, start , end") بتحقق من اول حرف لو طلع هو بيرجع ترو مكنش فولس
 i = "I Love Python"
 print(i.startswith("I"))
 print(i.startswith("S"))
 print(i.startswith("P", 7, 12))
 
+#  endswith("char, start , end") بتحقق من اخر حرف لو طلع هو بيرجع ترو مكنش فولس
 print("\n")
 print(i.endswith("n"))
 print(i.endswith("S"))
 print(i.endswith("n", 7,-1))
+
+
+#  ---------------------
+#  -- Strings Methods --
+#  ---------------------
+
+#  index(SubString, Start, End) return the index  
+
+a = "I Love Python"
+print(a.index("n"))
+print(a.index("o" , 0 ,15 ))
+
+#  find() =>  index() بس الاختلاف لو الحرف اللي بتبحث عنه مش موجود بيرجع -1
+b = "I Love Python"
+print(b.find("lo"))
+
+#  rjust("width, fill char")   ||   ljust("width, fill char")   ||   center("width, fill char")  =>  بيضيفوا قبل الكلمه
+
+c = "Ahmed"
+print(c.center(15,"!"))
+
+#  rjust() add fill char from right
+print(c.rjust(10,"!"))
+
+#  ljust() add fill char from left
+print(c.ljust(10,"!"))
+
+ #  splitlines() list  بقدر اقسم السطور اللي عندي و اخزمهم في 
+
+e = """First Line
+Second Line
+Third Line"""
+
+print(e.splitlines())
+
+d = "Ahmed \n Taha \n Ahmed"
+print(d.splitlines())
+
+# expandtabs("number spaces")  add tab betweens the words 
+f = " I\t  Love\t Python\t  And \t 3G "
+print(f.expandtabs(5))
+
+# islower() check the text is lower 
+g = "my name Ahmed"
+print(g.islower())
+
+# islower() check the text is upper 
+g = "MY NAME AHMED TAHA"
+print(g.isupper())
+
+# istitle() check the text is title
+h = "Ahmed Taha 89Fci"
+print(h.istitle())
+
+# isspace() is checking there the space  
+print("\n")
+s = " " 
+print(s.isspace())
+ 
+print("\n")
+s = "" 
+print(s.isspace())
+
+# isidentifier()  check the text can used to a variable 
+
+v  = "_ahmed_taha"
+b  = "Ahmed89taha"
+n  = "#ahmed-taha"
+m  = "89ahmedtaha"
+
+print("\n")
+print(v.isidentifier())
+print(b.isidentifier())
+print(n.isidentifier())
+print(m.isidentifier())
+
+print("\n")
+x = "AaaaaBbbbbb"
+y = "AaaaaBbbbbb111"
+print(x.isalpha())
+print(y.isalpha())
+
+
+print("\n")
+u = "AaaaaBbbbbb"
+z = "AaaaaBbbbbb111"
+print(u.isalnum())
+print(z.isalnum())
+
+# replace("old word" , "new word" , count ) replace the old word to new word 
+name = "ahmed taha ahmed"
+print(name.replace("ahmed", "taha"))
+print(name.replace("ahmed", "taha" , 1))
+
+
+# join(Iterable) => split  دي عكس 
+name = ["ahmed" , "taha" , "ahmed"]
+print("_".join(name))
