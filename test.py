@@ -431,10 +431,9 @@ print(name.replace("ahmed", "taha" , 1))
 name = ["ahmed" , "taha" , "ahmed"]
 print("_".join(name))
 
-# ------------------------
-# -- Strings Formatting --
-# ------------------------
-
+# ------------------------------------
+# -- Strings Formatting (Old Way)-----
+# ------------------------------------
 
 name = "Ahmed"
 age = 20
@@ -447,7 +446,6 @@ print("My Name is: " + name)
 # %s  => String
 # %d  => Number 
 # %f  => Float
-
 
 print("My Name is: %s"  %"ahmed")
 print("My Name is: %s"  %name)
@@ -470,3 +468,65 @@ print("My Name is %s and Iam %d years and my salary  %.3f" %(Name,Age,Salary))
 # Truncate String
 Name = "Ahmed Taha"
 print("My name is %.5s" %Name)
+
+
+# ------------------------------------
+# -- Strings Formatting (New Way)-----
+# ------------------------------------
+
+# {:s}  => String
+# {:d}   => Number 
+# {:f}   => Float
+print("\n")
+print("My Name is: {:s}"  .format("ahmed"))
+print("\n")
+print("My Name is: {:s}"  .format(name))
+print("\n")
+print("My Name is: {:d}"  .format(age))
+print("\n")
+print("My Name is: {:f}"  .format(gpa))
+print("\n")
+print("my name is   {:s} and my age {:d} and my gpa  is : ({:f}) " .format(name,age,gpa))
+print("\n")
+
+Name = "Ahmed Taha"
+Age  = 20
+Job  = "Data Analyst" 
+Salary = 5000
+print("\n")
+print("My Name is {:s} and Iam {:d} years and my job {:s}" .format(Name,Age,Job))
+print("\n")
+
+# Control Floating Point Number
+print("\n")
+print("my name is  {:s} and my age {:d} and my gpa  is : {:f} " .format(name,age,gpa))
+print("\n")
+print("My Name is {:s} and Iam {:d} years and my salary  {:.2f}" .format(Name,Age,Salary))
+
+
+# Truncate String
+Name = "Ahmed Taha"
+print("\n")
+print("My name is {:.5s} " .format(Name))
+print("\n")
+
+
+# Money Format
+myMoney = 500162350198
+print("My Money in Bank Is: {:d}"  .format(myMoney))
+print("My Money in Bank Is: {:,d}"  .format(myMoney))
+print("My Money in Bank Is: {:_d}"  .format(myMoney))
+
+# ReArrange Items
+a = 1
+b = 2
+c = 3
+print("one: {2} , \t Two : {0} , \t Three {1}" .format(a,b,c))
+
+
+
+a = 1000
+b = 2000
+c = 3000
+print("one: {2:f} , \t Two : {0:f} , \t Three {1:f}" .format(a,b,c))
+print("one: {0:.3f}  \t Two : {1:.3f}  \t Three {2:.3f}" .format(a,b,c))
