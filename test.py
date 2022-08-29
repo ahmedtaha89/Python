@@ -430,3 +430,43 @@ print(name.replace("ahmed", "taha" , 1))
 # join(Iterable) => split  دي عكس 
 name = ["ahmed" , "taha" , "ahmed"]
 print("_".join(name))
+
+# ------------------------
+# -- Strings Formatting --
+# ------------------------
+
+
+name = "Ahmed"
+age = 20
+gpa = 3
+
+print("My Name is: " + name)
+# print("My Name is: " + name + " " + age) # type error
+
+
+# %s  => String
+# %d  => Number 
+# %f  => Float
+
+
+print("My Name is: %s"  %"ahmed")
+print("My Name is: %s"  %name)
+print("My Name is: %d"  %age)
+print("My Name is: %f"  %gpa)
+print("my name is  %s and my age %d and my gpa  is : (%f) " %(name,age,gpa))
+
+
+Name = "Ahmed Taha"
+Age  = 20
+Job  = "Data Analyst" 
+Salary = 5000
+print("My Name is %s and Iam %d years and my job %s" %(Name,Age,Job))
+
+# Control Floating Point Number
+print("my name is  %s and my age %d and my gpa  is : (%.2f) " %(name,age,gpa))
+print("My Name is %s and Iam %d years and my salary  %.3f" %(Name,Age,Salary))
+
+
+# Truncate String
+Name = "Ahmed Taha"
+print("My name is %.5s" %Name)
