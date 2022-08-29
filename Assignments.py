@@ -89,7 +89,7 @@ name = 'Elzero'
 # "rzE"
 
 
-print("Second Letter Is " + name[1:4] + "\n" + "Third Letter Is  "  + name[0:5:2] +  "\n" + "Last Letter Is " + name[:-1:2]) 
+print("Second Letter Is " + name[1:4] + "\n" + "Third Letter Is  "  + name[0:5:2] +  "\n" + "Last Letter Is " + name[::-1]) 
 # print("Second Letter Is " + name[1::4] + "\n" + "Third Letter Is  "  + name[2] +  "\n" + "Last Letter Is " + name[5]) 
 
 #------------------------------------------------------------------------------------------#
