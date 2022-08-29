@@ -543,3 +543,10 @@ b = 2000
 c = 3000
 print("one: {2:f} , \t Two : {0:f} , \t Three {1:f}" .format(a,b,c))
 print("one: {0:.3f}  \t Two : {1:.3f}  \t Three {2:.3f}" .format(a,b,c))
+
+# List
+
+test = "test " * 8
+print(test )
+
+print([1,2,3] * 3)
