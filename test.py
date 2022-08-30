@@ -550,3 +550,121 @@ test = "test " * 8
 print(test )
 
 print([1,2,3] * 3)
+
+
+# -------------
+# -- Numbers --
+# -------------
+
+# Integer =>  رقم صحيح سواء موجب أو سالب 
+
+print(type(1))
+print(type(-1))
+print(type(1111))
+
+print("\n")
+
+# Float (Floating point number)  =>  رقم غير صحيح يعني يحتوي علي كسور سواء موجب او سالب 
+
+print(type(1.006))
+print(type(-1.549))
+print(type(1454.123456789))
+print(type(-1454.123456789))
+print("\n")
+ 
+# Complex  (Real Number + imaginary Number)
+
+print(10+5j)
+print(type(10+5j))
+
+Complex = 5+9j
+print(f"Real Num is :{Complex.real}")
+print(f"imaginary Num is :{Complex.imag}")
+print("\n")
+
+
+# [1] You Can Convert From Int To Float or Complex
+
+print(100)
+print(float(100))
+print("\n")
+
+
+# [2] You Can Convert From Float To Int or Complex
+
+print(10.0)
+print(int(10.0))
+
+# [3] You Can Convert From Float To Int or Complex
+
+print(10.05)
+print(complex(10.05))
+
+# [4] You Cannot Convert Complex To Any Type
+
+
+print(5+5j)
+# print(int(5+5j))
+
+
+
+# --------------------------
+# -- Arithmetic Operators --
+# --------------------------
+# [+] Addition
+# [-] Subtraction
+# [*] Multiplication
+# [/] Division
+# [%] Modulus
+# [**] Exponent
+# [//] Floor Division
+# --------------------------
+
+# [+] Addition
+
+print(9 + 9)
+print(9.5 + 9)
+print(-91 + 900)
+
+
+# [-] Subtraction
+
+print(9 - 9)
+print(9.5 - 9)
+print(91 - 900)
+
+# [*] Multiplication
+
+print(9 * 9)
+print(9.5 * 9)
+print(-12 * 9)
+
+# [/] Division
+
+print(-9 / 9)
+print(9.5 / 9.5)
+print(12 / 2)
+
+# [%] Modulus
+
+print(3 % 2)
+print(4 % 2)
+print(9 % 2)
+
+# [**] Exponent
+
+print(3 ** 2)
+print(-4 ** 2)
+print(9.5 ** 2)
+
+# [//] Floor Division  => بتاخد  الرقم الصحيح بعد  القسمه 
+
+print(100 // 20)  # 5
+print(119 // 20)  # 5
+print(120 // 20)  # 6
+print(140 // 20)  # 7
+print(142 // 20)  # 7print(100 // 20)  # 5
+print(119 // 20)  # 5
+print(120 // 20)  # 6
+print(140 // 20)  # 7
+print(142 // 20)  # 7
