@@ -549,6 +549,7 @@ print("one: {0:.3f}  \t Two : {1:.3f}  \t Three {2:.3f}" .format(a,b,c))
 test = "test " * 8
 print(test )
 
+<<<<<<< HEAD
 print([1,2,3] * 3)
 
 
@@ -668,3 +669,6 @@ print(119 // 20)  # 5
 print(120 // 20)  # 6
 print(140 // 20)  # 7
 print(142 // 20)  # 7
+=======
+print([1,2,3] * 3)
+>>>>>>> 38ecfc94b195ac09b138db29b8f715fa94172055
