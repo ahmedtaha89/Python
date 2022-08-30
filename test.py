@@ -11,6 +11,7 @@
 #  -------------------------------
 
 #  This is Comment
+from re import L
 from tokenize import Name
 
 
@@ -549,7 +550,7 @@ print("one: {0:.3f}  \t Two : {1:.3f}  \t Three {2:.3f}" .format(a,b,c))
 test = "test " * 8
 print(test )
 
-<<<<<<< HEAD
+
 print([1,2,3] * 3)
 
 
@@ -669,6 +670,34 @@ print(119 // 20)  # 5
 print(120 // 20)  # 6
 print(140 // 20)  # 7
 print(142 // 20)  # 7
-=======
 print([1,2,3] * 3)
->>>>>>> 38ecfc94b195ac09b138db29b8f715fa94172055
+
+
+# -----------------------------
+# -- Lists --
+# -----------
+# [1] List Items Are Enclosed in Square Brackets
+# [2] List Are Ordered, To Use Index To Access Item
+# [3] List Are Mutable => Add, Delete, Edit
+# [4] List Items Is Not Unique
+# [5] List Can Have Different Data Types
+# -----------------------------
+
+
+List = ["ahmed",89 , "taha", True ,True, 89.63]
+print(List)
+print(type(List))
+print(List[0])
+print(List[-1])
+print(List[-3:-1])
+print(List[0:3])
+print(List[0:])
+print(List[:-1])
+print(List[::3])
+print(List[::-2])
+List[3] = "Ahmed"
+print(List[3])
+List[0] = "Ahmed"
+print(List[0:4])
+List[1:4] = ["Test"] 
+print(List)
