@@ -687,3 +687,54 @@ List[0] = "Ahmed"
 print(List[0:4])
 List[1:4] = ["Test"] 
 print(List)
+
+# -------------------
+# -- Lists Methods --
+# -------------------
+
+# append()  list بتضيف عنصر في نهايه  
+
+name = ["Ahmed","Taha", "Ahmed"]
+name.append("El bastawesy")
+print(name)
+name.append(89.6)
+print(name)
+name.append(True)
+print(name)
+
+name = ["Ahmed","Taha", "Ahmed"]
+bro  = ["mostafa", "Taha", "Ahmed"]
+name.append(bro)
+print(name)
+print(name[3][0])
+
+
+
+# extend()  =>  list بتعمل دمج ل  
+name  = ["Ahmed","Taha", "Ahmed"]
+bro   = ["mostafa", "Taha", "Ahmed"]
+bro_2 = ["mohmed" ,"taha", "ahmed"] 
+name.extend(bro)
+name.extend(bro_2)
+print(name)
+
+# remove() list بتزيل اول كلمه من 
+bro  = ["mostafa", "Taha", "Ahmed"]
+bro.remove("Ahmed")
+print(bro)
+
+# sort()   من حيث الاكبر او الاصغر  list بتعمل فرز 
+
+y = [1, 2, 100, 120, -10, 17, 29]
+y.sort()
+print(y)
+ 
+y.sort(reverse=True)  # Sort اللي اتعملها  list بتعكس 
+print(y)
+
+
+# reverse() =>  list بتعكس 
+
+y = [1, 2, 100, 120, -10, 17, 29]
+y.reverse()
+print(y)
