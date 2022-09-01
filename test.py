@@ -1,4 +1,3 @@
-
 #  -------------------------------
 #  Information About File
 #  License
@@ -9,10 +8,6 @@
 #  Write Before The Programming Line
 #  Prevent Code From Run
 #  -------------------------------
-
-#  This is Comment
-from re import L
-from tokenize import Name
 
 
 print("I Love Python")  #  This is Inline Comment
