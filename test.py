@@ -696,5 +696,3 @@ List[0] = "Ahmed"
 print(List[0:4])
 List[1:4] = ["Test"] 
 print(List)
-
-
