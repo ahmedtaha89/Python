@@ -114,23 +114,13 @@ y = "is "
 z = "awesome"
 print(x , y ,z)
 
-f = 0
 
 
-f="guru"
-
-print(f + str(99))
 
 #  Declare a variable and initialize it
 f = 101
 print (f)
-#  Global vs. local variables in functions
-def someFunction():
-#  global f
-    f = 'I am learning Python'
-    print (f)
-someFunction()
-print (f)
+
 
 #  ---------------
 #  -- Variables --
@@ -166,9 +156,9 @@ print("I started with $" + str(savings) + " and now have $" + str(result) + ". A
 
 First_Name = "Ahmed "
 Last_Name  = "Taha"
-Name = First_Name  +"\n"+ Last_Name
+Name = First_Name  + "\n" + Last_Name
 print(Name)
-print(First_Name +" "+Last_Name)
+print(First_Name + " " + Last_Name)
 #  print("Hello " + 1)  #  Error
 
 #  -------------
@@ -301,7 +291,6 @@ print(a.split("_" , 3) )
 #  separator and step  
 a = "I_Love_Python_and_PHP_and_MySQL"
 print(a.rsplit("_" , 3) )
-
 
 
 #  center() بتضيف قبل و بعد الكلام اي حاجه انت عايزها 
@@ -684,10 +673,12 @@ print(List)
 print(type(List))
 print(List[0])
 print(List[-1])
+# slicing 
 print(List[-3:-1])
 print(List[0:3])
 print(List[0:])
 print(List[:-1])
+# indexing
 print(List[::3])
 print(List[::-2])
 List[3] = "Ahmed"
