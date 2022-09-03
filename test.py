@@ -729,6 +729,8 @@ y = [1, 2, 100, 120, -10, 17, 29]
 y.sort()
 print(y)
  
+ # sort(reverse = True || False)
+ 
 y.sort(reverse=True)  # Sort اللي اتعملها  list بتعكس 
 print(y)
 
@@ -738,3 +740,44 @@ print(y)
 y = [1, 2, 100, 120, -10, 17, 29]
 y.reverse()
 print(y)
+
+
+# -------------------
+# -- Lists Methods --
+# -------------------
+
+# clear()  =>  list من items بتفضي كل 
+
+a = [1,2,8,"fd",True]
+a.clear()
+print(a)
+
+# copy()  =>  تانيه list ل list اللي في items بتنسخ كل  
+
+b = [1,2,3,4,5,6,7]
+c = b.copy()
+b.append(8)
+print(b) # Main List 
+print(c) # Copied List 
+
+
+
+# count() => كام مره items بتعد  
+d = [1, 2, 3, 4, 3, 9, 10, 1, 2, 1]
+print(d.count(1))
+
+
+# index()  => Return index  item
+
+e = ["Osama", "Ahmed", "Sayed", "Ramy", "Ahmed", "Ramy"]
+print(e.index("Ahmed"))
+
+# insert("index","value") add before Item  that you selected
+f = [1, 2, 3, 4, 5, "A", "B"]
+f.insert(0,0)
+print(f)
+
+# pop(index) remove item from list and return the list 
+g = [1, 2, 3, 4, 5, "A", "B"] 
+g.pop(0)
+print(g)
