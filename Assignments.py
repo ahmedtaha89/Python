@@ -188,3 +188,25 @@ print(f"My Name Is {name}, And My Age Is {age} , And My Country Is {country}")
 
  #------------------------------------------------------------------------------------------#
  
+# Numbers & Arithmetic Operators 
+
+# (Lessons from 19 To 20)
+# تكليف 01 
+
+#  int
+#  Float
+#  complex
+
+print(type(100))
+print(type(10.0))
+print(type(100+8J))
+
+# Complex => (Real + imaginary) => 1+2J
+a = 1+2J 
+print(a.real) 
+print(a.imag)
+
+
+
+num = 10 
+print("%.10f"  %num)
