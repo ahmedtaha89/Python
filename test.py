@@ -783,3 +783,37 @@ print(f)
 g = [1, 2, 3, 4, 5, "A", "B"] 
 g.pop(0)
 print(g)
+
+
+# -----------------------------
+# -- Tuple --
+# -----------
+# [1] Tuple Items Are Enclosed in Parentheses
+#  [2] You Can Remove The Parentheses If You Want
+# [3] Tuple Are Ordered, To Use Index To Access Item
+# [4] Tuple Are Immutable => You Cant Add or Delete
+# [5] Tuple Items Is Not Unique
+# [6] Tuple Can Have Different Data Types
+# [7] Operators Used in Strings and Lists Available In Tuples
+# -----------------------------
+
+# Tuple syntax
+
+Tuple = ("Ahmed","Taha")
+# Tuple = "Ahmed"
+# Tuple[0] = "Taha"  not support item assignment
+# Tuple[1] = []      not support item assignment
+Tuple  = (1.55,10,1121,"Test", True,1.55,[1,2,3,4,5])
+print(Tuple)
+print(type(Tuple))
+
+
+
+
+# Tuple Indexing
+
+print(Tuple[3])
+print(Tuple[6][2])
+print(Tuple[-2:])
+print(Tuple[0::2])
+
