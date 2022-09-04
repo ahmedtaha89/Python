@@ -19,6 +19,7 @@
 #------------------------------------------------------------------------------------------#
 
 # تكليف 02  
+
 Name     = "Ahmed Taha"
 Age      = "20"
 Country  = "Egypt"
@@ -26,42 +27,85 @@ Country  = "Egypt"
 #------------------------------------------------------------------------------------------#
 
 # تكليف 03  
-print(" Name: "  + Name  )
-print("Age: "       + Age)
-print("Country: "   +Country)
+
+# Concatenation
+print("Name: "      + Name)
+print("Age: "       +  Age)
+print("Country: "   + Country)
+
+#  old way (Format String)
+print("Name: %s   "        %Name)
+print("Age:  %s   "         %Age)
+print("Country: %s"     %Country)
+
+
+# New way (Format String)
+print("Name: {:s}"      .format(Name))
+print("Age: {:s}"      .format(Age))
+print("Country: {:s}"   .format(Country))
+
+
+# New way (Format String) => Js
+print(f"Name: {Name}")
+print(f"Age: {Age}")
+print(f"Country: {Country}")
+
+
 
 #------------------------------------------------------------------------------------------#
 
 # تكليف 04  
-print("Hello, My 'Name Is "+ Name +  " And Iam " +Age+ " Years Old and I Live in "+Country+  ".")
+Name     = "Ahmed Taha"
+Age      = "20"
+Country  = "Egypt"
+
+# "Hello, My Name Is Osama And Iam 38 Years Old and I Live in Egypt."
+
+# Concatenation
+print("Hello, My Name Is "+ Name +  " And Iam " +Age+ " Years Old and I Live in "+Country+  ".")
+# New way => JS 
+print(f"Hello, My Name Is  {Name} And Iam  {Age} Years Old and I Live in {Country} "".")
+# Old way 
+print("Hello, My Name Is %s And Iam %s Years Old and I Live in %s." %(Name,Age,Country))
+# New way 
+print("Hello, My Name Is {:s} And Iam {:s} Years Old and I Live in {:s}." .format(Name,Age,Country))
+
 
 #------------------------------------------------------------------------------------------#
 
 # تكليف 05  
+
 print(type(Name))
 print(type(Age))
 print(type(Country))
 
 #------------------------------------------------------------------------------------------#
 
+
+
+
+
 # Strings And Methods
 
 # (Lessons from 10 To 18)
+
 # تكليف 01 
 
 Name     =  "Ahmed Taha"
 Age      =  20
 Country  = "Egypt"   
 
-#"Hello 'Osama', How You Doing \ """ Your Age Is "38"" + And Your Country Is: Egypt
+# "Hello 'Osama', How You Doing \ """ Your Age Is "38"" + And Your Country Is: Egypt
 
 print("\"Hello \'{:s}\' , How You Doing \\   \"\"\" Your Age Is \"{:d}\"\" + And Your Country Is: {:s}" .format(Name,Age,Country)) 
 print(f"\"Hello \'{Name}\' , How You Doing \\   \"\"\" Your Age Is \"{Age}\"\" + And Your Country Is: {Country}" )
+#"Hello 'Osama', How You Doing \ """ Your Age Is "38"" + And Your Country Is: Egypt
 
  #------------------------------------------------------------------------------------------#
 
  # التكليف 02
-print(f"\"Hello \'{Name}\' , How You Doing \\ \n\"\"\" Your Age Is \"{Age}\"\" + \nAnd Your Country Is: {Country}" ) 
+ 
+print(f"Hello \'{Name}\' , How You Doing \\ \n\"\"\" Your Age Is \"{Age}\"\" + \nAnd Your Country Is: {Country}" ) 
 
 
 #------------------------------------------------------------------------------------------#
@@ -76,11 +120,11 @@ name = 'Elzero'
 # Last Letter Is "o"
 name = 'Elzero'
 print("Second Letter Is " + name[1] + "\n" + "Third Letter Is  "  + name[2] +  "\n" + "Last Letter Is " + name[5]) 
-print("Second Letter Is " + name[1] + "\n" + "Third Letter Is  "  + name[2] +  "\n" + "Last Letter Is " + name[5]) 
 
 #------------------------------------------------------------------------------------------#
 
  # التكليف 04
+ 
 name = 'Elzero'
 
 # Needed Output
@@ -89,7 +133,7 @@ name = 'Elzero'
 # "rzE"
 
 
-print("Second Letter Is " + name[1:4] + "\n" + "Third Letter Is  "  + name[0:5:2] +  "\n" + "Last Letter Is " + name[  6 : 0 : -1]) 
+print("Second Letter Is " + name[1:4] + "\n" + "Third Letter Is  "  + name[0:5:2] +  "\n" + "Last Letter Is " + name[-2::-2]) 
 
 #------------------------------------------------------------------------------------------#
 
@@ -150,12 +194,14 @@ print(name_two.swapcase())
  #------------------------------------------------------------------------------------------#
 
  #  التكليف 09
+ 
 msg = "I Love Python And Although Love Elzero Web School"
 print(msg.count("Love"))
 
  #------------------------------------------------------------------------------------------#
 
  #  التكليف 10
+ 
 name = "Elzero"
 
 print(name.index("z"))
@@ -188,9 +234,15 @@ print(f"My Name Is {name}, And My Age Is {age} , And My Country Is {country}")
 
  #------------------------------------------------------------------------------------------#
  
+ 
+ 
+ 
+ 
+ 
 # Numbers & Arithmetic Operators 
 
 # (Lessons from 19 To 20)
+
 # تكليف 01 
 
 #  int
@@ -201,12 +253,151 @@ print(type(100))
 print(type(10.0))
 print(type(100+8J))
 
+#------------------------------------------------------------------------------------------#
+
+# تكليف 02 
+
 # Complex => (Real + imaginary) => 1+2J
 a = 1+2J 
 print(a.real) 
 print(a.imag)
+# print((1+2J).real)
+# print((1+2J).imag)
 
+#------------------------------------------------------------------------------------------#
 
+# تكليف 03 
 
 num = 10 
 print("%.10f"  %num)
+print(f"{num:.10f}")
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 04 
+
+num = 159.650
+print(int(num))
+print(type(int(num)))
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 05 
+
+# 100 - 115 = -15  
+# 50 * 30 = 1500
+# 21 % 4 = 1
+# 110 / 11 = 10
+# 97 // 20 = 4
+
+
+#------------------------------------------------------------------------------------------#
+
+
+
+
+# List & Methods 
+
+# (Lessons from 21 To 23)
+
+
+# تكليف 01 
+
+Friends   =  ["Ammar", "Kareem", "Islam","Faris","Mohmoud"]
+print(Friends[0])
+print(Friends[-5])
+print(Friends[4])
+print(Friends[-1])
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 02 
+
+
+friends = ["Osama", "Ahmed", "Sayed", "Ali", "Mahmoud"] 
+print(friends[::2])
+print(friends[1::2])
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 03 
+
+print("\n")
+
+friends = ["Osama","Ahmed","Sayed","Ali","Ali","Mahmoud"] 
+
+print(friends[0:-1])
+print(friends[-2::-2])
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 04 
+
+print("\n")
+friends = ["Osama", "Ahmed", "Sayed", "Ali", "Mahmoud"]
+friends[-2:] =["Elzero","Elzero"] 
+print(friends)
+
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 05 
+
+print("\n")
+friends = ["Osama", "Ahmed", "Sayed"]
+friends.insert(0,"Nasser")
+print(friends)
+friends.append("Salem")
+print(friends)
+
+
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 06 
+print("\n")
+friends = ["Nasser", "Osama", "Ahmed", "Sayed", "Salem"]
+# friends.pop(0:2)
+friends[0:2] = []
+print(friends)
+print("\n")
+friends[-1:] = []
+print(friends)
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 07 
+
+print("\n")
+friends = ["Ahmed", "Sayed"]
+employees = ["Samah", "Eman"]
+school = ["Ramy", "Shady"]
+employees = ["Samah", "Eman"]
+friends.extend(employees)
+friends.extend(school)
+print(friends)
+
+
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 08 
+
+
+friends = ["Ahmed", "Sayed", "Samah", "Eman", "Ramy", "Shady"]
+friends.sort()
+print(friends)
+friends.sort(reverse=True)
+print(friends)
+
+print("\n")
+
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 09 
+
+technologies = ["Html", "CSS", "JS", "Python", ["Django", "Flask", "Web"]]
+print(technologies[4][0])
+print(technologies[4][-1])
+

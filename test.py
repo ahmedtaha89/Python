@@ -752,6 +752,8 @@ a = [1,2,8,"fd",True]
 a.clear()
 print(a)
 
+# List_Name[]  = []  => Clear
+
 # copy()  =>  تانيه list ل list اللي في items بتنسخ كل  
 
 b = [1,2,3,4,5,6,7]
