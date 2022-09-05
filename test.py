@@ -912,3 +912,62 @@ print(Test_set)
 
 Test_set = {1,1,"Ahmed",85.5,(5,"test")}
 print(Test_set)
+
+# -----------------
+# -- Set Methods --
+# ----------------- 
+
+
+# clear() => بتعمل ازاله لكل العناصر
+a = {1, 2, 3}
+a.clear()
+print(a)
+
+
+# union()   => اتحاد لمجموعتين
+b = {1,2,3,5}
+c = {4,5}
+b.union(c)
+print(b.union(c))
+
+
+# add() Added one item
+b = {1,2,3,5}
+b.add(6)
+print(b)
+
+# copy()  Copied from set
+d = {1,2,3,5}
+e = d.copy()
+print(e)
+
+
+# remove() remove specific item
+g = {1, 2, 3, 4}
+g.remove(1)
+# g.remove(7)
+print(g)
+
+# discard() => error انها مش بترجع رساله  remove بتعمل ازاله لعنصر معين بس بتختلف عن 
+h = {1, 2, 3, 4}
+h.discard(5)
+print(h)
+h.discard(50)
+print(h)
+
+
+# pop() Return number and remove  =>  لاخر حاجه اتضافت return في الداتا ستركشر المفروض انها بتعمل 
+i = {"A", 0 ,True, 1, 2, 3, 4, 5}
+print(i.pop())
+print(i.pop())
+print(i.pop())
+
+test_list = [1,5,87,898]
+print(test_list.pop())
+
+# update() == unoin()  بتعمل دمج للمجموعات و بتشيل المتكرر
+
+j = {1, 2, 3}
+k = {1, "A", "B", 2}
+j.update(k)
+print(j)
