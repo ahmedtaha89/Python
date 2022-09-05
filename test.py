@@ -808,8 +808,6 @@ print(Tuple)
 print(type(Tuple))
 
 
-
-
 # Tuple Indexing
 
 print(Tuple[3])
@@ -817,3 +815,72 @@ print(Tuple[6][2])
 print(Tuple[-2:])
 print(Tuple[0::2])
 
+# -----------
+# -- Tuple --
+# -----------
+
+
+# Tuple With One Element
+
+Test_one= ("Ahmed Taha",)
+Test_two = "Ahmed Taha",
+ 
+print(type(Test_one))
+print(type(Test_two))
+
+
+# len  =>  او الحروف لو كلمه واحده Tuple بترجع عدد العناصر في 
+_Length_1  = (1.55,10,1121,"Test", True,1.55,[1,2,3,4,5])
+print(len(_Length_1))
+_Length_2 = "Ahmed Taha"
+print(len(_Length_2))
+
+
+# Tuple Concatenation
+a = (1, 2, 3, 4)
+b = (5, 6)
+c = a + b
+print(c)
+
+c = a + ("Ahmed",55,True) + b
+print(c)
+
+# Tuple Repeat (*) 
+Test_List_Repeat = ("Ahmed ",) * 3
+print(Test_List_Repeat)
+
+# List Repeat (*) 
+Test_tuple_Repeat = [1,2]
+print(Test_tuple_Repeat)
+
+# String Repeat (*) 
+Test_string_Repeat = "Ahmed " * 3
+print(Test_string_Repeat)
+
+
+# Methods => count() => count items is tuple
+Test_count = (1.55,10,1121,"Test", True,True,True,1.55,[1,2,3,4,5])
+print(Test_count.count(True))
+
+# Methods => index() => return index from tuple
+Test_index = (1.55,10,1121,"Test", True,True,True,1.55,[1,2,3,4,5])
+print(Test_index.index(10))
+
+
+b = (1, 3, 7, 8, 2, 6, 5)
+# print("The Position of Index Is: " + b.index(7))  # Error
+# Old way string format
+print("The Position of Index Is: %d" %(b.index(7)))
+
+# New way string format
+print("The Position of Index Is: {:d}" .format(b.index(7)))
+# New way string format => Js
+print(f"The Position of Index Is: {b.index(7)}")
+
+
+# Tuple Destruct 
+a = ("A", "B", 4,"C")
+x , y , _ ,z = a
+print(x)
+print(y)
+print(z)
