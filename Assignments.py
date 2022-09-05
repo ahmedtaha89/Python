@@ -20,6 +20,12 @@
 
 # تكليف 02  
 
+from dataclasses import replace
+from typing import Concatenate
+
+from test import List, Tuple
+
+
 Name     = "Ahmed Taha"
 Age      = "20"
 Country  = "Egypt"
@@ -407,3 +413,47 @@ technologies = ["Html", "CSS", "JS", "Python", ["Django", "Flask", "Web"]]
 print(technologies[4][0])
 print(technologies[4][-1])
 
+
+
+# Tuples & Methods
+# (Lessons from 24 To 24)
+# تكليف 01 
+
+Name = "Ahmed",
+print(Name)
+print(type(Name))
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 02 
+
+friends = ("Osama", "Ahmed", "Sayed")
+
+# a = list(friends)
+# a[0] = "Elzero"
+# friends = Tuple(a)
+# print(friends)
+
+print(type(friends))
+print(len(friends))
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 03 
+
+nums = (1, 2, 3)
+letters = ("A", "B", "C")
+Concatenate = nums + letters
+print(Concatenate)
+print(len(Concatenate))
+
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 04 
+
+my_tuple = (1, 2, 3, 4)
+a,b,_,c = my_tuple
+print(a)
+print(b)
+print(c)
