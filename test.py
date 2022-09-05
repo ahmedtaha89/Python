@@ -884,3 +884,31 @@ x , y , _ ,z = a
 print(x)
 print(y)
 print(z)
+
+
+
+# -----------------------------
+# -- Set --
+# ---------
+# [1] Set Items Are Enclosed in Curly Braces
+# [3] Set Indexing and Slicing Cant Be Done
+# [4] Set Has Only Immutable Data Types (Numbers, Strings, Tuples) List and Dict Are Not
+# [2] Set Items Are Not Ordered And Not Indexed
+# [5] Set Items Is Unique
+# -----------------------------
+
+Test_set = {1,"Ahmed",85.5}
+print(Test_set)
+# print(Test_set[1]) 
+# print(Test_set[1::]) 
+
+
+Test_set = {1,"Ahmed",85.5,(5,"test")}
+print(Test_set)
+
+# Test_set = {1,"Ahmed",85.5,[5,"test"]}  unhashable type: 'list'
+# print(Test_set) 
+
+
+Test_set = {1,1,"Ahmed",85.5,(5,"test")}
+print(Test_set)
