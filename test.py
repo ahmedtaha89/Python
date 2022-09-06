@@ -923,11 +923,13 @@ a = {1, 2, 3}
 a.clear()
 print(a)
 
+print("-" * 40)
 
-# union()   => اتحاد لمجموعتين
+# union()   => اتحاد لمجموعتين (a | b)
 b = {1,2,3,5}
 c = {4,5}
 b.union(c)
+print(b | c)
 print(b.union(c))
 
 
@@ -971,3 +973,62 @@ j = {1, 2, 3}
 k = {1, "A", "B", 2}
 j.update(k)
 print(j)
+
+print("-" * 40)  # Separator
+
+
+# difference() =>  (A - B)
+a = {1, 2, 3, 4}
+b = {1, 2, 3, "Osama", "Ahmed"} 
+print(a.difference(b))
+print(a - b)
+print(b.difference(a))
+print("-" * 40)  # Separator
+
+
+# difference_update() => orginal set  بس  بتنقل التحديثات   difference هي نفس 
+c = {1, 2, 3, 4}
+d = {1, 2, "Osama", "Ahmed"}
+print(c)
+c.difference_update(d)  # (c - d) 
+print(c)
+print("-" * 40)  # Separator
+
+
+# intersection()  => المشترك بين المجموعتين   (A ∩ B)  =>  (e & f)
+e = {1, 2, 3, 4, "X", "Osama"}
+f = {"Osama", "X", 2}
+print(e)
+print(e.intersection(f))
+print(e & f)
+
+print("-" * 40)  # Separator
+
+# intersection_update()  =>    فيها الداتا الجديده  original set  المشترك بين المجموعتين  بس بتخلي  (A ∩ B)  =>  (e & f)
+e = {1, 2, 3, 4, "X", "Osama"}
+f = {"Osama", "X", 2}
+print(e)
+e.intersection_update(f)
+print(e)
+
+print("-" * 40)  # Separator
+
+# symmetric_difference() => A Δ B = (A ∪ B) - (A ∩ B)  => اللي مش موجود في الاتنين  =>  (i ^ j)
+i = {1, 2, 3, 4, 5, "X"}
+j = {"Osama", "Zero", 1, 2, 4, "X"}
+
+print(i.symmetric_difference(j))
+
+print("-" * 40)  # Separator
+
+
+
+
+# symmetric_difference_update()    =>  original set بتنقل الشغل الجديد في  =>  (i ^ j)
+i = {1, 2, 3, 4, 5, "X"}
+j = {"Osama", "Zero", 1, 2, 4, "X"}
+print(i)
+i.symmetric_difference_update(j)
+print(i)
+s = i ^ j
+print(s)
