@@ -977,6 +977,16 @@ print(j)
 print("-" * 40)  # Separator
 
 
+# -----------------
+# -- Set Methods --
+# -----------------
+
+# difference = ( - )
+# union = ( | )
+# intersection ( & )
+# symmatric_difference ( ^ )
+
+
 # difference() =>  (A - B)
 a = {1, 2, 3, 4}
 b = {1, 2, 3, "Osama", "Ahmed"} 
@@ -1032,3 +1042,47 @@ i.symmetric_difference_update(j)
 print(i)
 s = i ^ j
 print(s)
+
+
+print("-" * 40)  # Separator
+
+
+
+# -----------------
+# -- Set Methods --
+# -----------------
+
+# issuperset() =>  method returns True if all items in the specified set exists in the original set, otherwise it retuns False.
+
+
+a = {1, 2, 3, 4}
+b = {1, 2, 3}
+c = {1, 2, 3, 4}
+print(a.issuperset(b))
+print(b.issuperset(a))
+print(a.issuperset(c))
+
+
+print("-" * 40)  # Separator
+
+# issubset() Return method returns True if all items in the set exists in the specified set, otherwise it retuns False.
+
+x = {"a", "b", "c"}
+y = {"f", "e", "d", "c", "b", "a"}
+
+z = x.issubset(y)
+
+print(z)
+
+print("-" * 40)  # Separator
+
+# isdisjoint() method returns True if none of the items are present in both sets, otherwise it returns False. => return true لو مكنش  return false لو بينهم حاجه مشتركه 
+h = {1, 2, 3}
+g = {1, 2, 3, 4}
+i = {10, 11, 12}
+
+j = h.isdisjoint(g)
+print(j)
+
+d = h.isdisjoint(i)
+print(d)
