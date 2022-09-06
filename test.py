@@ -1065,8 +1065,8 @@ print(a.issuperset(c))
 
 print("-" * 40)  # Separator
 
-# issubset() Return method returns True if all items in the set exists in the specified set, otherwise it retuns False.
-
+# issubset() Return method returns True if all items in the set exists in the specified set, otherwise it retuns False. 
+ 
 x = {"a", "b", "c"}
 y = {"f", "e", "d", "c", "b", "a"}
 
