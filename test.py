@@ -1086,3 +1086,115 @@ print(j)
 
 d = h.isdisjoint(i)
 print(d)
+
+print("-" * 40)  # Separator
+
+
+# ---------------------------
+# -- Dictionary --
+# ----------------
+# [1] Dict Items Are Enclosed in Curly Braces
+# [2] Dict Items Are Contains Key : Value
+# [3] Dict Key Need To Be Immutable => (Number, String, Tuple) List Not Allowed
+# [4] Dict Value Can Have Any Data Types
+# [5] Dict Key Need To Be Unique  => لو كررت نفس القيم هياخد اخر قيمه 
+# [6] Dict Is Not Ordered You Access Its Element With Key
+# ----------------------------
+
+# Syntax 
+Dict = {"Key" : "value"}
+
+dict = {
+"name":"ahmed" ,
+"age" : 20 ,
+"gpa" : 3.23 ,
+"age" : 21 ,
+"tuple" : (1,3,"test")
+}
+
+print(dict)
+# keys => return all keys in dictionary
+print(dict.keys())
+
+# keys => return all values in dictionary
+print(dict.values())
+
+# get() => return specific iems from dictionary 
+print(dict.get("age"))  # =>  print(dict["age"])
+
+
+print("-" * 40)  # Separatorprint("-" * 40)  # Separator
+
+
+# Two-Dimensional Dictionary  =>  dict يحتوي علي  dict   =>  [][]
+
+Two_Dimensional = {
+    "name" : {
+        "name_1" : "ahmed",
+        "name_2" : "ali",
+        "name_3" : "ammar",
+        "name_4" : "faris"
+    },
+    "age" : {
+        "age_1": 20,
+        "age_2": 22,
+        "age_3": 28,
+        "age_4": 22,
+    },
+    "gpa" : {
+        "gpa_1" : 3.2,
+        "gpa_2" : 3.42,
+        "gpa_3" : 3.57,
+        "gpa_4" : 3.0,
+    },
+}
+
+print(Two_Dimensional)
+print(Two_Dimensional.keys())
+print(Two_Dimensional.values())
+
+print("-" * 40)  # Separatorprint("-" * 40)  # Separator
+
+# one dict
+print(Two_Dimensional.get("age"))
+print(Two_Dimensional["gpa"])
+
+# Two Dimensional
+print(Two_Dimensional["age"]["age_2"])
+print(Two_Dimensional["gpa"]["gpa_2"])
+
+print("-" * 40)  # Separatorprint("-" * 40)  # Separator
+
+# Dictionary Length  => len() => return lenght dict
+
+print(len(Two_Dimensional))
+print(len(Two_Dimensional["age"]))
+
+
+# Create Dictionary From Variables 
+
+frameworkOne = {
+  "name": "Vuejs",
+  "progress": "80%"
+}
+
+frameworkTwo = {
+  "name": "ReactJs",
+  "progress": "80%"
+}
+
+frameworkThree = {
+  "name": "Angular",
+  "progress": "80%"
+}
+
+framework = {
+    
+    "one" : frameworkOne,
+    "Two" : frameworkTwo,
+    "Three" : frameworkThree,
+    
+}
+
+
+print(framework)
