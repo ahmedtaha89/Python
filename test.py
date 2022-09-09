@@ -1198,3 +1198,60 @@ framework = {
 
 
 print(framework)
+
+# ------------------------
+# -- Dictionary Methods --
+# ------------------------
+
+# clear() =>  Remove all items from dictionary
+
+framework = {
+    
+    "one" : frameworkOne,
+    "Two" : frameworkTwo,
+    "Three" : frameworkThree,
+    
+}
+
+framework.clear()
+print(framework)
+
+
+print("-" * 40)
+
+# update() 
+
+member = {
+  "name": "Osama"
+}
+print(member)
+member["age"] = 36
+print(member)
+
+# member.update({"country": "Egypt"})
+# print(member)
+
+
+print("-" * 50)
+
+# copy() 
+
+main = {
+  "name": "Osama"
+}
+
+c = main.copy()
+print(c)
+
+# keys() + values()
+
+framework = {
+    
+    "one" : frameworkOne,
+    "Two" : frameworkTwo,
+    "Three" : frameworkThree,
+    
+}
+
+print(framework.keys())
+print(framework.values())
