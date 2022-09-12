@@ -1441,3 +1441,27 @@ print(d)
 
 d %= e
 print(d)
+
+
+print("=" * 50)
+
+# --------------------------
+# -- Comparison Operators --
+# --------------------------
+# [ == ] Equal
+# [ != ] Not Equal
+# [ > ] Greater Than
+# [ < ] Less Than
+# [ >= ] Greater Than Or Equal
+# [ <= ] Less Than Or Equal
+# --------------------------
+
+
+a = 5 
+print(a == 5)
+print(a == 5.00)
+print(a != 5)
+print(a > 4)
+print(a >= 5)
+print(a < 5)
+print(a <= 5)
