@@ -718,7 +718,7 @@ name.extend(bro)
 name.extend(bro_2)
 print(name)
 
-# remove() list بتزيل اول كلمه من 
+# remove() remove item from list     
 bro  = ["mostafa", "Taha", "Ahmed"]
 bro.remove("Ahmed")
 print(bro)
