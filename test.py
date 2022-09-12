@@ -1317,3 +1317,61 @@ print(test_items)
 a = ("k1","k2","k3")
 b = ("v1")
 print(dict.fromkeys(a,b))
+
+
+
+
+List = [11,78,7,1, 2, 3, 4, 5, 6,6]
+List.remove(6)
+List.sort(reverse = True)
+print(List)
+
+List = [11,78,7,1, 2, 3, 4, 5, 6, 6]
+List.reverse()
+print(List)
+
+
+List = [11,78,7,1, 2, 3, 4, 5, 6, 6]
+List_copy = List.copy()
+print(List_copy)
+
+g = [1, 2, 3, 4, 5, "A", "B"] 
+g.pop()
+print(g)
+
+
+
+# ----------------------
+# -- Boolean   => منطقي 
+# ----------------------
+# [1] In Programming You Need to Known Your If Your Code Output is True Or False
+# [2] Boolean Values Are The Two Constant Objects False + True.
+# ---------------------------------------------------------------
+
+
+S = " "
+print(S.isspace())
+
+print(10 > 1)
+print(10 > 10)
+print(10 > 100)
+
+print("=" * 50)
+
+
+# bool() => true || false 
+print(bool("ahmed"))
+print(bool(True))
+print(bool(1))
+print(bool(1.588))
+
+print("=" * 50)
+
+print(bool())
+print(bool(0))
+print(bool(None))
+print(bool({}))
+print(bool(()))
+print(bool([]))
+print(bool(""))
+print(bool(''))
