@@ -533,16 +533,9 @@ My_Skills = {
     "Python": "Python Progress Is 30%"
 }
 
-
 print(My_Skills["HTML"])
 print(My_Skills["CSS"])
 print(My_Skills["Python"])
-
-
-
-
 My_Skills["Ai"] = " AI Progress Is 20%"
 My_Skills.update({"ai" : "AI Progress Is 20%"})
-
-
 print(My_Skills)
