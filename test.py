@@ -1376,3 +1376,68 @@ print(bool(()))
 print(bool([]))
 print(bool(""))
 print(bool(''))
+
+print("=" * 50)
+
+# -----------------------
+# -- Boolean Operators --
+# -----------------------
+# and  لازم كل الشروط تتحقق 
+# or لازم شرط واحد ع الاقل يتحقق 
+# not بتفي الشرط  =>  not true || false 
+# -----------------------
+
+
+age = 20 
+name = "ahmed"
+print(age == 20 and name == "ahmed")
+print(age < 20 or name == "ahmed")
+print(not age == 20)
+
+print("=" * 50)
+
+
+
+
+# --------------------------
+# -- Assignment Operators --
+# --------------------------
+# =
+# +=
+# -=
+# *=
+# /=
+# **=
+# %=
+# //=
+# --------------------------
+
+a = 5 
+b = 10
+c = a + b
+print(c)
+
+# var_1 = self [operator (+,-,/,*,%,**,//)] + var_2
+# a = a + b
+
+# var_1 [operator  (+,-,/,*,%,**,//)] = var_2 
+a += b
+print(a) 
+
+
+d = 15 
+e = 3
+d -= e
+print(d)
+
+d /= e
+print(d)
+
+d *= e
+print(d)
+
+d //= e
+print(d)
+
+d %= e
+print(d)
