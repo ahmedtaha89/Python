@@ -416,7 +416,7 @@ print(technologies[4][-1])
 
 
 # Tuples & Methods
-# (Lessons from 24 To 24)
+# (Lessons from 24 To 25)
 # تكليف 01 
 
 Name = "Ahmed",
@@ -457,3 +457,92 @@ a,b,_,c = my_tuple
 print(a)
 print(b)
 print(c)
+
+print("-" * 50 )
+
+#------------------------------------------------------------------------------------------#
+
+# Set, Dictionary & Methods
+# (Lessons from 26 To 32)
+
+# تكليف 01 
+
+
+My_List = [1,2,3,4,5,1]
+Unique_List = list(set(My_List))
+print(Unique_List)
+print(type(Unique_List))
+Unique_List.remove(5)
+print(Unique_List)
+
+print("-" * 50 )
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 02 
+
+nums = {1, 2, 3}
+letters = {"A", "B", "C"}
+
+print(nums.union(letters))
+print(nums  | letters)
+nums.update(letters)
+print(nums)
+print("-" * 50 )
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 03 
+
+nums = {1, 2, 3}
+letters = {"A", "B", "C"}
+print(nums)
+nums.clear()
+print(nums)
+
+print("-" * 50 )
+
+nums.update("A","B")
+print(nums)
+
+nums.discard("C")
+print(nums)
+
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 04 
+
+print("-" * 50 )
+
+
+set_one = {1, 2, 3}
+set_two = {1, 2, 3, 4, 5, 6}
+
+print(set_one.issubset(set_two))
+
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 05 
+
+My_Skills = {
+    
+    "HTML"  : "HTML Progress Is 90%" ,
+    "CSS"   : "CSS Progress Is 80%",
+    "Python": "Python Progress Is 30%"
+}
+
+
+print(My_Skills["HTML"])
+print(My_Skills["CSS"])
+print(My_Skills["Python"])
+
+
+
+
+My_Skills["Ai"] = " AI Progress Is 20%"
+My_Skills.update({"ai" : "AI Progress Is 20%"})
+
+
+print(My_Skills)

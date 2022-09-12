@@ -1255,3 +1255,65 @@ framework = {
 
 print(framework.keys())
 print(framework.values())
+
+
+# ------------------------
+# -- Dictionary Methods --
+# ------------------------
+
+print("-" * 50)
+
+# setdefault("key" , "value") => return value
+
+test = {
+  "name"  : "ahmed" ,
+  "phone" : 1017363740
+}
+print(test)
+print(test.setdefault("name"))
+print(test)
+print("=" * 50)
+
+# popitem()  =>  dict بترجع اخر قيمه انضافت في 
+
+test = {
+  "name"  : "ahmed" ,
+  "phone" : 1017363740
+}
+
+# add new key (1)
+
+test["gpa"] = 3.2
+print(test)
+
+# add new key (2)
+
+test.update({"age" : 20})
+print(test)
+
+
+
+print(test.popitem())
+
+
+# items() return all items from dict
+
+test = {
+  "name"  : "ahmed" ,
+  "phone" : 1017363740,
+  "age" : 20
+}
+
+
+test_items = test.items()
+
+test["gpa"] = 2.9
+
+print(test_items)
+
+
+# fromkeys() => create dict from two variable 
+
+a = ("k1","k2","k3")
+b = ("v1")
+print(dict.fromkeys(a,b))
