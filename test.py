@@ -718,7 +718,7 @@ name.extend(bro)
 name.extend(bro_2)
 print(name)
 
-# remove() list بتزيل اول كلمه من 
+# remove() remove item from list     
 bro  = ["mostafa", "Taha", "Ahmed"]
 bro.remove("Ahmed")
 print(bro)
@@ -1317,6 +1317,7 @@ print(test_items)
 a = ("k1","k2","k3")
 b = ("v1")
 print(dict.fromkeys(a,b))
+<<<<<<< HEAD
 
 
 
@@ -1375,3 +1376,5 @@ print(bool(()))
 print(bool([]))
 print(bool(""))
 print(bool(''))
+=======
+>>>>>>> 99ba6f0813db2088f8847be74855e0b8232f70c8
