@@ -539,3 +539,50 @@ print(My_Skills["Python"])
 My_Skills["Ai"] = " AI Progress Is 20%"
 My_Skills.update({"ai" : "AI Progress Is 20%"})
 print(My_Skills)
+
+
+
+#------------------------------------------------------------------------------------------#
+
+# Operators & Type Conversion
+# (Lessons from 33 To 37)
+
+# تكليف 01 
+
+print("*" * 60)
+
+print(bool("test"))
+print(bool(1))
+print(bool(True))
+print(bool(1.55))
+print(bool())
+print(bool(0))
+print(bool(None))
+print(bool(()))
+
+
+
+#------------------------------------------------------------------------------------------#
+# تكليف 02 
+
+print("*" * 60)
+
+
+html = 80
+css = 60
+javascript = 70
+
+print(html and css and javascript > 50)
+
+
+#------------------------------------------------------------------------------------------#
+# تكليف 03 
+
+print("*" * 60)
+
+num_one = 10
+num_two = 20
+num = 20
+
+print(num < num_one or name_two)
+print(num > num_one and name_two)

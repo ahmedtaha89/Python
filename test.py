@@ -1680,8 +1680,25 @@ print(set(d))
 # (3) list    =>     nested list  لازم يكون في
 # (4)  set    =>   dict ل  set مينفعش احول من   unhashable 
 
-d = (("A", 1), ("B", 2), ("C", 3))  # Tuple
-e = [["One", 1], ["Two", 2], ["Three", 3]]  # List
+# d = (("A", 1), ("B", 2), ("C", 3))  # Tuple
+# e = [["One", 1], ["Two", 2], ["Three", 3]]  # List
+# print(dict(d))
+# print(dict(e))
 
-print(dict(d))
-print(dict(e))
+
+# ----------------
+# -- User Input --
+# ---------------
+
+First_Name  = input("what is  the first name ?")
+Middle_Name = input("what is  the middle name ?")
+Last_Name   = input("what is  the last name ?")
+
+First_Name = First_Name.capitalize().strip()
+Middle_Name = Middle_Name.capitalize().strip()
+Last_Name = Last_Name.capitalize().strip()
+
+
+
+
+print(f"Welcome , {First_Name} {Middle_Name:.1s} {Last_Name}" )
