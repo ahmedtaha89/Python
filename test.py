@@ -1466,4 +1466,53 @@ print(a >= 5)
 print(a < 5)
 print(a <= 5)
 
-# test kareem
+
+
+
+# ---------------------
+# -- Type Conversion --
+# ----------------------
+
+# str()  int => string  
+
+
+a = 6
+print(type(a))
+print(type(str(a))) 
+
+print("#" * 50)
+
+
+
+# tuple()
+
+S = "TAHA"
+L = [1,3,9,89]
+s = {1,2,3,4,5,"ahmed"}
+d = { 
+"name" : "ahmed" ,
+"age" :20
+}
+
+print(tuple(S))
+print(tuple(s))
+print(tuple(L))
+print(tuple(d))
+
+print("#" * 50)
+
+
+# list()
+
+S = "TAHA"
+L = (1,3,9,89)
+s = {1,2,3,4,5,"ahmed"}
+d = { 
+"name" : "ahmed" ,
+"age" :20
+}
+
+print(list(S))
+print(list(s))
+print(list(L))
+print(list(d))
