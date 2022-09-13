@@ -1690,15 +1690,52 @@ print(set(d))
 # -- User Input --
 # ---------------
 
-First_Name  = input("what is  the first name ?")
-Middle_Name = input("what is  the middle name ?")
-Last_Name   = input("what is  the last name ?")
+# First_Name  = input("what is  the first name ?")
+# Middle_Name = input("what is  the middle name ?")
+# Last_Name   = input("what is  the last name ?")
 
-First_Name = First_Name.capitalize().strip()
-Middle_Name = Middle_Name.capitalize().strip()
-Last_Name = Last_Name.capitalize().strip()
-
-
+# First_Name = First_Name.capitalize().strip()
+# Middle_Name = Middle_Name.capitalize().strip()
+# Last_Name = Last_Name.capitalize().strip()
 
 
-print(f"Welcome , {First_Name} {Middle_Name:.1s} {Last_Name}" )
+
+# print(f"Welcome , {First_Name} {Middle_Name:.1s} {Last_Name}")
+
+
+
+
+# ---------------------------
+# -- Practical Slice Email --
+# ---------------------------
+
+print("*" * 50)
+
+# Email = "ahmedtaha8963@gmail.com"
+# print(Email[0:Email.index("@")])
+# print(Email[Email.index("@"):])
+
+# print("*" * 50)
+
+# UserName = input("what`s your name ?").strip().capitalize()
+# Email    = input("what is your email ?").strip()
+# print(f"UserName: {UserName}  and u Email : ({Email})")
+# print(Email[Email.index("@") + 1 :  ])
+
+
+
+# Age calc 
+
+Age = int(input("Enter Your Age ?"))
+
+Months   = Age     * 12
+Weeks    = Months  * 4
+Days     = Age     * 365
+Hours    = Days    * 24 
+Minutes  = Hours   * 60
+Seconds  = Minutes * 60
+
+print(f"Your Age : {Age}  , Months : {Months} , Weeks : {Weeks} , Days : {Days:,} , Hours : {Hours:,} , Minutes : {Minutes:,}, Seconds : {Seconds:,}")
+
+# Enter Your Age ? 20
+# Your Age : 20  , Months : 240 , Weeks : 960 , Days : 7,300 , Hours : 175,200 , Minutes : 10,512,000, Seconds : 630,720,000

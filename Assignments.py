@@ -21,9 +21,10 @@
 # تكليف 02  
 
 from dataclasses import replace
+import email
 from typing import Concatenate
 
-from test import List, Tuple
+from test import First_Name, List, Tuple
 
 
 Name     = "Ahmed Taha"
@@ -584,5 +585,75 @@ num_one = 10
 num_two = 20
 num = 20
 
-print(num < num_one or name_two)
-print(num > num_one and name_two)
+print(num > (num_one or name_two) )
+print(num > (num_one and num_two) )
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 04 
+
+num_one = 10 
+num_two = 20 
+
+result = num_one + num_two 
+print(result)
+
+result **= 3
+print(result)
+
+result %= 26000
+print(result)
+
+result /= 5
+print(result)
+
+
+print(type(str(result)))
+
+#------------------------------------------------------------------------------------------#
+
+# User Input & Practice
+# (Lessons from 38 To 40)
+
+# تكليف 01 
+
+Name = input("what \'s your name : ").strip().lower()
+
+print(f"Hello {Name}, Happy To See You Here.")
+
+
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 02 
+
+print("#" * 50)
+
+Age = int(input("Enter your age ..... ."))
+if Age  < 16 :
+  print("Hello Your Age Is Under 16, Some Articles Is Not Suitable For You" )
+  
+else  :
+ print(f"Hello Your Age Is {Age} All Articles Is Suitable For You")  
+ 
+ 
+ 
+ #------------------------------------------------------------------------------------------#
+
+# تكليف 03 
+
+First_Name  = input("First Name  :").strip().capitalize()
+Second_Name = input("Second Name :").strip().capitalize()
+print(f"Hello {First_Name} {Second_Name:.1s}." )
+
+
+ 
+ #------------------------------------------------------------------------------------------#
+
+# تكليف 04 
+
+# "Osama@Nn.Sa"  
+email = input("enter your email : ").strip().lower()
+print( email[:email.index("@")] .capitalize())
+print(email[email.index("@") + 1 : email.index(".") ])
+print(email[email.index(".") + 1 : ]) 
