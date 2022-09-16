@@ -1854,5 +1854,5 @@ while v > 0 and v < 1000:
 myF = ["Os", "Ah", "Ga", "Al", "Ra", "Sa", "Ta", "Ma", "Mo", "Wa"]
 a = 0 
 while a < len(myF) :
-    print(f'{str(a+1).zfill(3)}- {myF[a]}')
+    print(f'{str(a+1).zfill}- {myF[a]}')
     a +=1 
