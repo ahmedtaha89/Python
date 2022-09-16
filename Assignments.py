@@ -741,4 +741,11 @@ else:
 
    print(f"Your Country Not Eligible For Discount And The Price Is ${price}")
 
+
+
+
+
 #------------------------------------------------------------------------------------------#
+
+# Loop While & Training
+# تكليف 01
