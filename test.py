@@ -1856,3 +1856,49 @@ a = 0
 while a < len(myF) :
     print(f'{str(a+1).zfill}- {myF[a]}')
     a +=1 
+    
+    
+# favorite subject
+
+favorite_subject = 5
+subject = []
+
+while favorite_subject > 0:
+  s = input("Enter  your favorite subject: ").strip().lower()
+  subject.append(s)
+  favorite_subject -= 1
+  print("favorite subject added.")
+  print(subject)
+  print(f" you can add {favorite_subject} subject.")
+
+else:
+    print("Sorry you can`t added new subject")
+
+b = 0
+while b < len(subject):
+   print(subject[b])
+   b += 1
+   
+   
+# ----------------------------
+# -- Loop => While Training --
+# -- Simple Password Guess --
+# ----------------------------
+
+
+
+password = "ahmed89@"
+tries = 5
+enter_pass = input("please enter your password ")
+
+while enter_pass != password:
+    tries -= 1
+    print(f"Wrong Password, { 'Last' if tries == 0 else tries } Chance Left")
+    enter_pass = input("please enter your password ")
+    if tries == 0:
+        print("Sorry , you use  all tries.")
+        break
+
+
+else:
+    print("Password correct")
