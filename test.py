@@ -1821,3 +1821,38 @@ else :
  print("Done, you are rejester.")
  print(Students)
 
+
+
+# -------------------
+# -- Loop => While --
+# -------------------
+# while condition_is_true
+#   Code Will Run Until Condition Become False
+# -----------------------
+
+
+a = 8 
+while (a<15) :
+    print(a)
+    
+    a+=1
+    
+    
+v = 2
+while v > 0 and v < 1000:
+    print(v)
+    v *= 2
+
+
+# ----------------------------
+# -- Loop => While Training --
+# ----------------------------
+# while condition_is_true
+#   Code Will Run Until Condition Become False
+# -----------------------
+
+myF = ["Os", "Ah", "Ga", "Al", "Ra", "Sa", "Ta", "Ma", "Mo", "Wa"]
+a = 0 
+while a < len(myF) :
+    print(f'{str(a+1).zfill(3)}- {myF[a]}')
+    a +=1 
