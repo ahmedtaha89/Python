@@ -1793,3 +1793,31 @@ elif unit == 'days' or unit == 'd':
 
   print("You Choosed The Unit Days")
   print(f"You Lived For {days:,} Days.")
+
+
+
+
+# ----------------------------------
+# -- Practical Membership Control --
+# ----------------------------------
+
+
+Students = ["ahmed","ali","ammar","alaa","kareem","ashraf","eslam"]
+Name = input("Please enter your name: ").strip().lower()
+
+if Name in Students :
+    print(f"Welcome ,{Name} you are rejestered in system")
+    print("Done, you are rejester.")
+    option = input("Do you intend to attend").strip().lower()
+    if option == "yes" or  option == "y" :
+        print("Thanks")
+    else:
+       print("sorry ") 
+        
+else :
+ print("sorry you aren`t rejestration is ")
+ New_Student = input("enter your name to registration in system").strip().lower()
+ Students[Students.append(New_Student)] = New_Student
+ print("Done, you are rejester.")
+ print(Students)
+

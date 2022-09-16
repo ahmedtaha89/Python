@@ -20,11 +20,11 @@
 
 # تكليف 02  
 
-from dataclasses import replace
-import email
-from typing import Concatenate
+# from dataclasses import replace
+# import email
+# from typing import Concatenate
 
-from test import First_Name, List, Tuple
+# from test import First_Name, List, Tuple
 
 
 Name     = "Ahmed Taha"
@@ -657,3 +657,86 @@ email = input("enter your email : ").strip().lower()
 print( email[:email.index("@")] .capitalize())
 print(email[email.index("@") + 1 : email.index(".") ])
 print(email[email.index(".") + 1 : ]) 
+
+ #------------------------------------------------------------------------------------------#
+
+# Control Flow
+# تكليف 01
+
+num1 = int(input("Enter number 1: ").strip())
+operation = input(" Enter the operator ").strip()
+num2 = int(input("Enter number 2: ").strip())
+
+
+if operation == "+" :
+  print(num1+num2)
+  
+elif operation == "-" :
+  print(num1-num2)
+  
+elif operation == "*":
+  print(num1*num2)
+  
+elif operation == "/" :
+  print(num1/num2)
+  
+  
+
+ #------------------------------------------------------------------------------------------#
+ 
+# تكليف 02
+
+
+age = 17
+
+if age > 17 : print("App Is Suitable For You")
+
+else : print("App Is Not Suitable For You")
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 03
+
+age = int(input("Enter your age: "))
+
+months = age * 12
+weeks = months * 4
+days = weeks * 7
+hour = days * 24
+minutes = hour * 60
+seconds = minutes * 60
+
+
+if age > 10 and age < 100:
+  print(f"Your Age In Months Is {months} Months")
+  print(f"Your Age In weeks Is {weeks} weeks")
+  print(f"Your Age In days Is {days} days")
+  print(f"Your Age In hour Is {hour} hour")
+  print(f"Your Age In minutes Is {minutes} minutes")
+  print(f"Your Age In seconds Is {seconds} seconds")
+
+
+else:
+  print("Sorry , your age isn't suitable")
+
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 04
+
+countries = ["Egypt", "Palestine", "Syria", "Yemen", "KSA", "USA", "Bahrain", "England"]
+discount = 30
+country = input("Input Your Country: ").strip().capitalize()
+price = int(input("enter the price: "))
+code = input("please enter the discount code: ")
+discount_code = '123'
+
+if country in countries:
+
+ if discount_code == '123':
+
+  print(f"you have a discount {(price - discount)}")
+
+else:
+
+   print(f"Your Country Not Eligible For Discount And The Price Is ${price}")
