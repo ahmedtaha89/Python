@@ -1900,8 +1900,6 @@ while enter_pass != password:
         break
 else:
     print("Password correct")
-
-<<<<<<< HEAD
 # -----------------
 # -- Loop => For --
 # -----------------
