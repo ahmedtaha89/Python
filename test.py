@@ -1898,11 +1898,10 @@ while enter_pass != password:
     if tries == 0:
         print("Sorry , you use  all tries.")
         break
-
-
 else:
     print("Password correct")
 
+<<<<<<< HEAD
 # -----------------
 # -- Loop => For --
 # -----------------
@@ -1941,3 +1940,7 @@ for s in mySkills :
     # print(s.upper())
     print(f"Skills: {s.lower()} and P: {mySkills[s]}")
     print("*"*10)
+=======
+
+print("loop")
+>>>>>>> 9afebdb85c59c16b58abc8f78c8e825b49f19776
