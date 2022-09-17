@@ -18,3 +18,48 @@
 # for R in  r  :
 #     print(R)
 
+
+
+# peoples = ["Osama", "Ahmed", "Sayed", "Ali"]
+# skills = ['Html', 'Css', 'Js']
+
+# for p in peoples :
+#     print(f"{p} skills:")
+# for s in skills :
+#     print(s)
+
+# Dictionary
+
+peoples = {
+    "Osama": {
+        "Html": "70%",
+        "Css": "80%",
+        "Js": "70%"
+    },
+    "Ahmed": {
+        "Html": "90%",
+        "Css": "80%",
+        "Js": "90%"
+    },
+    "Sayed": {
+        "Html": "70%",
+        "Css": "60%",
+        "Js": "90%"
+    }
+}
+
+# print(peoples["Osama"])
+# print(peoples["Ahmed"])
+# print(peoples["Sayed"])
+
+print(peoples["Osama"]['Css'])
+print(peoples["Ahmed"]['Css'])
+print(peoples["Sayed"]['Css'])
+
+for name in peoples:
+
+  print(f"Skills and Progress For {name} Is: ")
+
+  for skill in peoples[name]:
+
+    print(f"{skill.upper()} => {peoples[name][skill]}")
