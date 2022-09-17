@@ -1925,3 +1925,19 @@ for  loop in F_loop :
 # -- Loop => For --
 # --  Trainings  --
 # -----------------
+
+
+mySkills = {
+  "Html": "90%",
+  "Css": "60%",
+  "PHP": "70%",
+  "JS": "80%",
+  "Python": "90%",
+  "MySQL": "60%"
+}
+
+
+for s in mySkills :
+    # print(s.upper())
+    print(f"Skills: {s.lower()} and P: {mySkills[s]}")
+    print("*"*10)

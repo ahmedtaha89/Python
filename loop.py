@@ -8,8 +8,13 @@
 # else :
 #     print("Done")
 
-t = 'ahmed taha'
-a = 0
-for test in t:
-    a+=1
-    print(f"({a}){test}*2".strip().capitalize())
+# t = 'ahmed taha'
+# a = 0
+# for test in t:
+#     a+=1
+#     print(f"({a}){test}*2".strip().capitalize())
+
+# r = range(1,11)
+# for R in  r  :
+#     print(R)
+
