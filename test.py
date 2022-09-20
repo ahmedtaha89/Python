@@ -9,6 +9,8 @@
 #  Prevent Code From Run
 #  -------------------------------
 
+# Indentation
+# Python uses indentation for blocks, instead of curly braces. Both tabs and spaces are supported, but the standard indentation requires standard Python code to use four spaces. For example:
 
 print("I Love Python")  # This is Inline Comment
 print("Programming")  # I Used This Method Because of Bla Bla Bla
@@ -1982,3 +1984,30 @@ for name in peoples:
   for skill in peoples[name]:
 
     print(f"{skill.upper()} => {peoples[name][skill]}")
+    
+# &	Bitwise AND	x & y
+# |	Bitwise OR	x | y
+# ~	Bitwise NOT	~x Returns one’s complement of the number.
+# ^	Bitwise XOR	x ^ y
+# >>	Bitwise right shift	x>>
+# <<	Bitwise left shift	x<<
+
+# a = 10 = 1010 (Binary)
+# b = 4 = 0100 (Binary
+# a&b = 1010 & 0100 = 0000 =0
+# a|b = 1010 | 0100 = 1110
+
+
+
+# a = 1010
+# b = 0100 
+# 1110
+ 
+# 8 4 2 1
+           # 0101 => 5
+# a = 10 =   1010 (Binary)
+# a >> 1 =   0101 = 5
+
+# a = 5 =  1010 => 10
+# a << 2 = 0100  
+ 

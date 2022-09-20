@@ -30,36 +30,42 @@
 
 # Dictionary
 
-peoples = {
-    "Osama": {
-        "Html": "70%",
-        "Css": "80%",
-        "Js": "70%"
-    },
-    "Ahmed": {
-        "Html": "90%",
-        "Css": "80%",
-        "Js": "90%"
-    },
-    "Sayed": {
-        "Html": "70%",
-        "Css": "60%",
-        "Js": "90%"
-    }
-}
+# peoples = {
+#     "Osama": {
+#         "Html": "70%",
+#         "Css": "80%",
+#         "Js": "70%"
+#     },
+#     "Ahmed": {
+#         "Html": "90%",
+#         "Css": "80%",
+#         "Js": "90%"
+#     },
+#     "Sayed": {
+#         "Html": "70%",
+#         "Css": "60%",
+#         "Js": "90%"
+#     }
+# }
 
 # print(peoples["Osama"])
 # print(peoples["Ahmed"])
 # print(peoples["Sayed"])
 
-print(peoples["Osama"]['Css'])
-print(peoples["Ahmed"]['Css'])
-print(peoples["Sayed"]['Css'])
+# print(peoples["Osama"]['Css'])
+# print(peoples["Ahmed"]['Css'])
+# print(peoples["Sayed"]['Css'])
 
-for name in peoples:
+# for name in peoples:
 
-  print(f"Skills and Progress For {name} Is: ")
+#   print(f"Skills and Progress For {name} Is: ")
 
-  for skill in peoples[name]:
+#   for skill in peoples[name]:
 
-    print(f"{skill.upper()} => {peoples[name][skill]}")
+#     print(f"{skill.upper()} => {peoples[name][skill]}")
+
+# x = 7
+# x ^= 3 # x = x^3 =5^3
+# print(x)
+
+a = 110
