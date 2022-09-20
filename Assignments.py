@@ -731,22 +731,23 @@ else:
 #------------------------------------------------------------------------------------------#
 
 # Loop While & Training
+
 # تكليف 01
 
-num = int(input("Enter the number:  "))
+# num = int(input("Enter the number:  "))
 
-if num == 0:
-    print("Number 0 Is Not Larger Than 0")
-else:
-    a = 0
-    while num > 1:
-        num -= 1
+# if num == 0:
+#     print("Number 0 Is Not Larger Than 0")
+# else:
+#     a = 0
+#     while num > 1:
+#         num -= 1
 
-        if num == 6:
-            continue
-        print(num)
-        a += 1
-print(f"{a} Numbers Printed Successfully.")
+#         if num == 6:
+#             continue
+#         print(num)
+#         a += 1
+# print(f"{a} Numbers Printed Successfully.")
 
 
 
