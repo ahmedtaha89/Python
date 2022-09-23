@@ -2010,4 +2010,7 @@ for name in peoples:
 
 # a = 5 =  1010 => 10
 # a << 2 = 0100  
- 
+
+# break => stop والشرط  اتحقق و عايز اعمل  if condition و عايز اقف عند شرط معين او عندي loop مثلا لو عندي
+# continue => واكمل عادي skip و عايز  if condition نفس الحوار لو عندي
+# pass => من الاخر كده بتعدي الدنيا
