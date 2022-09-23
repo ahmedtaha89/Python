@@ -68,4 +68,10 @@
 # x ^= 3 # x = x^3 =5^3
 # print(x)
 
-a = 110
+
+F_loop = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for loop in F_loop:
+    if loop % 2 == 0:
+        pass
+print(f"Even:{loop}")
