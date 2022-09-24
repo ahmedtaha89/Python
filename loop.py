@@ -200,21 +200,27 @@
 # print(f"Total Points Is {total}")
 
 
-my_ranks = {
-    'Math': 'A',
-    "Science": 'B',
-    'Drawing': 'A',
-    'Sports': 'C'
-}
+# my_ranks = {
+#     'Math': 'A',
+#     "Science": 'B',
+#     'Drawing': 'A',
+#     'Sports': 'C'
+# }
 
-rank = {
-    'A':100,
-    "B":80,
-    'C': 70
-}
-total = 0
-for r_key, r_value in my_ranks.items() :
-    print(
-        f"My Rank in {r_key} Is {r_value} And This Equal {rank[r_value]} Points")
-    total += rank[r_value]
-print(f"Total Points Is {total}")
+# rank = {
+#     'A':100,
+#     "B":80,
+#     'C': 70
+# }
+# total = 0
+# for r_key, r_value in my_ranks.items() :
+#     print(
+#         f"My Rank in {r_key} Is {r_value} And This Equal {rank[r_value]} Points")
+#     total += rank[r_value]
+# print(f"Total Points Is {total}")
+
+def hello() :
+    return "Hello Python From Inside Function"
+
+p_hello = hello()
+print(p_hello)
