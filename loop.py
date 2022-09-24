@@ -219,8 +219,55 @@
 #     total += rank[r_value]
 # print(f"Total Points Is {total}")
 
-def hello() :
-    return "Hello Python From Inside Function"
+# def hello() :
+#     return "Hello Python From Inside Function"
 
-p_hello = hello()
-print(p_hello)
+# p_hello = hello()
+# print(p_hello)
+
+
+
+a = "Ahmed"
+b = "Taha"
+c = "Ahmed"
+ 
+# print(f"Hello {a}") 
+# print(f"Hello {b}") 
+# print(f"Hello {c}") 
+
+# def                            => define function
+# S_Hello()                      => function name 
+# Name                           => parameter
+# print(f"Hello {Name}")         => Task
+# S_Hello(a)                     => function 
+# a,b,c                          => arguments
+
+# def S_Hello(Name) :
+#     print(f"Hello {Name}")
+    
+
+# S_Hello(a)
+# S_Hello(b)
+# S_Hello(c)
+
+
+# def addition(num1 , num2):
+#     print(num1 + num2)
+ 
+    
+    
+# addition(5,5)  
+# addition(50,15)  
+# addition(115,45)  
+    
+    
+def Division(num1, num2):
+    if num1 <= 0 or num2 <= 0:
+        print("Cannot divide by zero")
+    else:
+     print(num1 / num2)
+
+
+
+# Division(12,2)
+Division(12,0)
