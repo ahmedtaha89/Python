@@ -773,6 +773,66 @@ for n in my_nums:
         print(f"{a}=>{n}")
 print("All Numbers Printed")
 
+ #------------------------------------------------------------------------------------------#
+ 
+# تكليف 2
+
+my_nums = [15, 81, 5, 17, 20, 21, 13]
+my_nums.sort(reverse=True)
+a = 0
+for n in my_nums:
+    if n % 5 == 0:
+        a += 1
+        print(f"{a}=>{n}")
+print("All Numbers Printed")
+r = range(1,21)
+
+for x in range(1,21) :
+    if x in [6,8,11]:
+        continue
+    elif x < 10:
+        print(f"\"0{x}\"")
+    else:
+     print(f"\"{x}\"")
+
+print("All Numbers Printed")   
+
+
+
+
+
+
+
+
+ #------------------------------------------------------------------------------------------#
+ 
+# تكليف 3
+
+
+my_ranks = {
+    'Math': 'A',
+    "Science": 'B',
+    'Drawing': 'A',
+    'Sports': 'C'
+}
+
+rank = {
+    'A': 100,
+    "B": 80,
+    'C': 70
+}
+total = 0
+for r_key, r_value in my_ranks.items():
+    print(
+        f"My Rank in {r_key} Is {r_value} And This Equal {rank[r_value]} Points")
+    total += rank[r_value]
+print(f"Total Points Is {total}")
+
+
+
+
+
+
 #------------------------------------------------------------------------------------------#
 
 # تكليف 04
@@ -801,11 +861,8 @@ students = {
 }
 
 for s_key, s_value in students.items():
-    print("""------------------------------"
-      "-- f"Student Name= > {s_key}"
-      "------------------------------""")
 
-    total = 0
+    print(f"Student Name= > {s_key}")
     for v in s_value:
         if s_value[v] == "A":
            s_value[v] = 100
@@ -820,7 +877,4 @@ for s_key, s_value in students.items():
            s_value[v] = 20
 
         print(f"{v} => {s_value[v]} Points")
-
-        total += s_value[v]
-    print(f"Total Points For {s_key} Is {total}")
     print("-"*40)
