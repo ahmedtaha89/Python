@@ -2055,3 +2055,9 @@ def Division(num1, num2):
      
 # Division(12,2)
 Division(12,0)
+
+
+def FullName(F,M,L):
+    print(f"Hello, {F.upper()} {M.lower():.1s} {L.upper()}")
+
+FullName("Ahmed","Taha","Ahmed")
