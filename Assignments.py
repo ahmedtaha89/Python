@@ -760,7 +760,67 @@ while skills:
     print(skills.pop())
     
  #------------------------------------------------------------------------------------------#
+ 
+# تكليف 01
+# Loop For & Training
 
+my_nums = [15, 81, 5, 17, 20, 21, 13]
+my_nums.sort(reverse=True)
+a = 0
+for n in my_nums:
+    if n % 5 == 0:
+        a += 1
+        print(f"{a}=>{n}")
+print("All Numbers Printed")
 
+#------------------------------------------------------------------------------------------#
 
-# Test Desktop
+# تكليف 04
+students = {
+    "Ahmed": {
+        "Math": "A",
+        "Science": "D",
+        "Draw": "B",
+        "Sports": "C",
+        "Thinking": "A"
+    },
+    "Sayed": {
+        "Math": "B",
+        "Science": "B",
+        "Draw": "B",
+        "Sports": "D",
+        "Thinking": "A"
+    },
+    "Mahmoud": {
+        "Math": "D",
+        "Science": "A",
+        "Draw": "A",
+        "Sports": "B",
+        "Thinking": "B"
+    }
+}
+
+for s_key, s_value in students.items():
+    print("""------------------------------"
+      "-- f"Student Name= > {s_key}"
+      "------------------------------""")
+
+    total = 0
+    for v in s_value:
+        if s_value[v] == "A":
+           s_value[v] = 100
+
+        elif s_value[v] == "B":
+           s_value[v] = 80
+
+        elif s_value[v] == "C":
+           s_value[v] = 40
+
+        elif s_value[v] == "D":
+           s_value[v] = 20
+
+        print(f"{v} => {s_value[v]} Points")
+
+        total += s_value[v]
+    print(f"Total Points For {s_key} Is {total}")
+    print("-"*40)
