@@ -2061,3 +2061,29 @@ def FullName(F,M,L):
     print(f"Hello, {F.upper()} {M.lower():.1s} {L.upper()}")
 
 FullName("Ahmed","Taha","Ahmed")
+
+
+# -------------------------------------------------
+# -- Function Packing, Unpacking Arguments *Args --
+# -------------------------------------------------
+
+
+# (*Args)
+# (1) list بتفكك 
+# (2) لو معرفش العدد بتاعه  arguments بستخدمها عشان اتجنب حوار  
+
+
+# takes 3 positional arguments but 4 were given
+def test_parameter(n1, n2, n3):
+    print(f"Hi,{n1}")
+    print(f"Hi,{n2}")
+    print(f"Hi,{n3}")
+test_parameter("Ahmed", "Taha", "Ahmed", "at89")
+
+
+# Test (*args) => packing and unpacking
+def test_parameter(*Name):
+    for n in Name :
+        print(f"Hi,{n}")
+test_parameter("Ahmed","Taha","Ahmed")    
+    

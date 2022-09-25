@@ -261,20 +261,37 @@ c = "Ahmed"
 # addition(115,45)  
     
     
-def Division(num1, num2):
-    if num1 <= 0 or num2 <= 0:
-        print("Cannot divide by zero")
-    else:
-     print(num1 / num2)
+# def Division(num1, num2):
+#     if num1 <= 0 or num2 <= 0:
+#         print("Cannot divide by zero")
+#     else:
+#      print(num1 / num2)
 
 
 
 # Division(12,2)
-Division(12,0)
+# Division(12,0)
 
 
 
-def FullName(F,M,L):
-    print(f"Hello, {F.upper()} {M.lower():.1s} {L.upper()}")
+# def FullName(F,M,L):
+#     print(f"Hello, {F.upper()} {M.lower():.1s} {L.upper()}")
 
-FullName("Ahmed","Taha","Ahmed")
+# FullName("Ahmed","Taha","Ahmed")
+
+
+# def test_parameter(*Name):
+#     for n in Name:
+#         print(f"Hi,{n}")
+
+
+# test_parameter("Ahmed", "Taha", "Ahmed","fdf")
+
+
+def details(name,*gpa):
+    print(f"Hello,{name}")
+    year=2020
+    for g in gpa :
+        year+=1
+        print(f"Your gpa {year}:{gpa}")
+details("ahmed")
