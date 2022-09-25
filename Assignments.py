@@ -878,3 +878,56 @@ for s_key, s_value in students.items():
 
         print(f"{v} => {s_value[v]} Points")
     print("-"*40)
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 01
+# Function
+
+
+def calculate(num1, num2, operator="add"):
+    operator = operator.lower()
+    if operator == "add" or operator == "a" or operator == "+":
+        print(num1 + num2)
+
+        # Subtraction
+    elif operator == "subtract" or operator == "s" or operator == "-":
+        print(num1 - num2)
+
+        # Multiplication
+    elif operator == "multiply" or operator == "m" or operator == "*":
+       print(num1 * num2)
+    else:
+        print("not exist.")
+
+
+calculate(10, 20, "AdD")
+calculate(10, 20, "-")
+calculate(10, 20, "a")
+calculate(10, 20, "A")
+calculate(10, 20, "+")
+calculate(10, 20, "S")
+calculate(10, 20, "subTRACT")
+calculate(10, 20, "f")
+
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 02
+
+def addition(*parameters):
+    sum = 0
+    for p in parameters:
+        if p == 10:
+            continue
+        elif p == 5:
+            sum -= p
+        else:
+            sum += p
+    print(sum)
+
+
+# addition(1,5,10,1,6)
+# addition(10,5,9)
+addition(10, 20, 30, 10, 15)
+addition(10, 20, 30, 10, 15, 5, 100)

@@ -2082,8 +2082,32 @@ test_parameter("Ahmed", "Taha", "Ahmed", "at89")
 
 
 # Test (*args) => packing and unpacking
-def test_parameter(*Name):
-    for n in Name :
-        print(f"Hi,{n}")
-test_parameter("Ahmed","Taha","Ahmed")    
-    
+def details(name,*gpa):
+    print(f"Hello,{name}")
+    year=2020
+    for g in gpa :
+        year+=1
+        print(f"Your gpa {year}:{gpa}")
+details("ahmed")
+
+
+
+def details(name, gpa1, gpa2, gpa3):
+    print(f"Hello,{name}")
+    year = 2020
+    year += 1
+    print(f"Your gpa {year}:{gpa1} \t {year}:{gpa2} \t {year}:{gpa3}")
+details("ahmed", 3.5, 4, 2.5)
+
+# ---------------------------------
+# -- Function Default Parameters --
+# ---------------------------------
+# arguments بعمل قيمه افتراضيه من عندي عشان معملتش قيمه لل 
+
+def details(name, gpa=2, age="null"):
+    print(f"Hi {name}, your Gpa: {gpa} and your age: {age}.")
+
+
+details("Ahmed", 2.5, 21)
+details("ali", 3)
+details("kareem")
