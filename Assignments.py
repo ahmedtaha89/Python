@@ -931,3 +931,26 @@ def addition(*parameters):
 # addition(10,5,9)
 addition(10, 20, 30, 10, 15)
 addition(10, 20, 30, 10, 15, 5, 100)
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 03
+
+
+def show_skills(name,*skills):
+    print(f"Hello {name} Your Skills Is")
+    for s in skills:
+      print(f"-{s}")
+show_skills("ahmed","Python","SQL")
+show_skills("Osama", "HTML", "CSS", "JS", "Python")
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 04
+
+def say_hello(name, age="Unknown", country="Unknown"):
+    print(f"Hello {name} Your Age Is {age} And You Live In {country}")
+
+
+say_hello("Ahmed",20,"Egy")
+say_hello("Ahmed")
