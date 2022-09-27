@@ -2174,3 +2174,23 @@ print(f"Print Variable From Global Scope After One Function Is Called {x}")
 # 5 15 1 5
 # 5 15 1 1
 # 1 1 15 1
+
+# ------------------------
+# -- Function Recursion --
+# ------------------------
+# ---------------------------------------------------------------------
+# -- To Understand Recursion, You Need to First Understand Recursion --
+# ---------------------------------------------------------------------
+
+# بتسدعي الداله جوه نفسها 
+
+# Test Word [ WWWoooorrrldd ] # print(x[1:])
+def Clean_Words(word):
+    if len(word) == 1:
+        return word 
+    if word[0] == word[1]:
+        return Clean_Words(word[1:])
+    return word[0] + Clean_Words(word[1:])
+
+
+print(Clean_Words("WWWoooorrrldd"))
