@@ -2194,3 +2194,80 @@ def Clean_Words(word):
 
 
 print(Clean_Words("WWWoooorrrldd"))
+
+
+
+# -------------------
+# -- File Handling --
+# -------------------
+# "a" Append  Open File For Appending Values, Create File If Not Exists
+# "r" Read    [Default Value] Open File For Read and Give Error If File is Not Exists
+# "w" Write   Open File For Writing, Create File If Not Exists
+# "x" Create  Create File, Give Error If File Exists
+# --------------------------------------------------
+
+import os
+
+# Main Current Working Directory
+# بيطبع المسار الرئيسي اللي انا فاتح منه الملفات 
+print(os.getcwd())
+
+# Directory For The Opened File
+print(os.path.dirname(os.path.abspath(__file__)))
+
+# Change Current Working Directory
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+print(os.getcwd())
+
+# بيطبع مسار الملف اللي انا فاتحه دلوقتي
+print(os.path.abspath(__file__))
+
+# file = open(r"D:\Python\Files\nfiles\osama.txt")
+
+# file = open("D:\Python\Files\osama.txt")
+
+
+
+# --------------------------------
+# -- File Handling => Read File --
+# --------------------------------
+
+import os
+
+file = open("F:\Taha.txt","r")
+
+# بترجع بيانات الملف
+# print(file)
+
+# بترجع اسم الملف
+# print(file.name)
+
+# return mode
+# print(file.mode)
+
+# return encoding
+# print(file.encoding)
+
+# بتقرأ كل البيانات اللي في الملف 
+# print(file.read())
+
+# بتقرأ كل البيانات اللي في الملف بس هنا بحدد عدد الحروف  
+# print(file.read(15))
+
+# print(file.readline())
+# print(file.readline(3))
+
+# list بترجع كل السطور بس بتحطها داخل 
+# print(file.readlines())
+
+# typr => list 
+# print(type(file.readlines()))
+
+# for line in file:
+#   print(line)
+#   if line.startswith("# M"):
+#     break
+
+# Close The File  
+file.close()  
