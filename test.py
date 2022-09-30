@@ -2270,4 +2270,131 @@ file = open("F:\Taha.txt","r")
 #     break
 
 # Close The File  
-file.close()  
+# file.close()  
+
+
+
+
+# -----------------------------------------------
+# -- File Handling => Write and Append In File --
+# -----------------------------------------------
+
+file = open("F:\AHMED.txt","w")
+file.write("Test write mode\n\n")
+file.write("Third Line\n")
+file.write("4 Line\n")
+
+mylist = ["ahmed\n","taha\n","ahmed\n"]
+file = open("F:\AHMED.txt","w")
+
+file.writelines(mylist) 
+
+
+file = open("F:\AHMED.txt","a")
+file.write("append3\n") 
+
+# truncate(number character) => بتقطع جزء معين من النص 
+# file.truncate(5)
+# tell() => بتقولك مكان المووس فين
+print(file.tell())
+# seek(number character) => بتنقل مكان المؤشر زي ما انت عايز 
+file.seek(15)
+print(file.tell())
+
+
+
+
+
+# ------------------------
+# -- Built In Functions --
+# ------------------------
+# all() => return true or false    true لازم كل البيانات
+# any() =>  وحده ع الاقل 
+# bin() return binary number
+# id() => return id to variable
+# ------------------------
+
+
+
+a = [1,489,4,"test",{}]
+if all(a) :
+    print("all is true")
+
+else:
+    print("all is false")
+
+
+
+
+a = [1,489,4,"test",{}]
+if any(a) :
+    print("all is true")
+
+else:
+    print("all is false")
+    
+print(id(a))
+
+
+d=1
+bin(d)
+print(bin(d))
+
+
+
+
+
+# ------------------------
+# -- Built In Functions --
+# ------------------------
+# sum()
+# round()
+# range()
+# print()
+# ------------------------
+
+
+# sum(iterable, start)
+# iterable => list || tuple || set 
+# start الرقم اللي هجمعه عليهم  
+from email.policy import default
+
+
+l = [1,2,3,4,5]
+print(sum(l))
+print(sum(l,15))
+
+
+# round(number, numofdigits) =>    بستخدمها عشان اقرب الارقام
+print(round(99.661,2))
+
+
+# range(start, end, step) => بحدد البدايه و النهايه و عدد الخطوات
+# step(default) = 1
+
+# for a in range(1,11):
+#     a=0
+#     # a+=1
+#     print(a)
+
+
+
+# for a in range(1,11,2):
+#     a=0
+#     # a+=1
+#     print(a)
+
+
+
+# print()
+
+# end(default) = "\n"
+# print("First" , end="\t" )
+# print("Second")
+# print("third")
+
+print("Hello @ Osama @ How @ Are @ You")
+
+# sep = "space" == " "
+
+print("Hello", "Osama", "How", "Are", "You", sep=" - ")     
