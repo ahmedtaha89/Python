@@ -993,8 +993,8 @@ get_people_scores(Logic=70, Problems=60)
 
 # Test4
 get_people_scores("Ahmed")
-#------------------------------------------------------------------------------------------#
 
+#------------------------------------------------------------------------------------------#
 
 # تكليف 03
 skills = {
@@ -1017,3 +1017,63 @@ def get_people_scores(name="",**skills):
 get_people_scores("ahmed",**skills)
 print("\n")         
 get_people_scores(**skills)         
+
+
+#------------------------------------------------------------------------------------------#
+
+# Built In Functions()
+# تكليف 01
+
+values = (0, 1, 2)
+
+if any(values):
+
+  my_var = 0
+
+my_list = [True, 1,  1, ["A", "B"], 10.5, 0]
+
+if all(my_list[:4]) or all(my_list[:6]) or all(my_list[:]):
+
+  print("Good")
+
+else:
+
+  print("Bad")
+  
+# Good   
+
+
+#------------------------------------------------------------------------------------------#
+
+# Built In Functions()
+# تكليف 02
+
+v = 40
+
+my_range = list(range(v))
+
+print(my_range)
+print(sum(my_range, v) + pow(v, v, v)) 
+
+#------------------------------------------------------------------------------------------#
+
+# Built In Functions()
+# تكليف 03
+
+
+n = 21
+
+
+l = list(range(n))
+
+# print(l)
+# print(sum(l))
+# print(sum(l) / n)
+
+if round(sum(l) / n) == max(0, 3, 10, 2, -100, -23, 9):
+
+  print("Good")
+
+# Output => Good
+
+# max = 10
