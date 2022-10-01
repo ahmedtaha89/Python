@@ -10,3 +10,7 @@ def  my_all(*l):
 print(my_all(1,2,3,54,0,()))
 
 
+ 
+ 
+ 
+ 
