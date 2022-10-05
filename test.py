@@ -2523,4 +2523,14 @@ print("-" * 40)
 
 for NAME in filter(lambda name : name.startswith("O"),myTexts):
     print(NAME)
-       
+    
+    # ----------------------------------
+# -- Built In Functions => Reduce --
+# ----------------------------------
+# [1] Reduce Take A Function + Iterator
+# [2] Reduce Run A Function On FIrst and Second Element And Give Result
+# [3] Then Run Function On Result And Third Element
+# [4] Then Run Function On Rsult And Fourth Element And So On
+# [5] Till One ELement is Left And This is The Result of The Reduce
+# [6] The Function Can Be Pre-Defined Function or Lambda Function
+# ---------------------------------------------------------------   
