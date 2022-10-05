@@ -2525,30 +2525,7 @@ print("-" * 40)
 for NAME in filter(lambda name : name.startswith("O"),myTexts):
     print(NAME)
     
-    # ----------------------------------
-# -- Built In Functions => Reduce --
-# ----------------------------------
-# [1] Reduce Take A Function + Iterator
-# [2] Reduce Run A Function On FIrst and Second Element And Give Result
-# [3] Then Run Function On Result And Third Element
-# [4] Then Run Function On Rsult And Fourth Element And So On
-# [5] Till One ELement is Left And This is The Result of The Reduce
-# [6] The Function Can Be Pre-Defined Function or Lambda Function
-# ---------------------------------------------------------------  
 
-
-def sum_number(num1,num2):
-    return  num1 + num2
-
-mylist = [1,2,3,4,5]
-
-R = reduce(sum_number,mylist)
-
-for number in R :
-    
-    print(number)
-    
-    
 
 # ------------------------
 # -- Built In Functions --
@@ -2573,5 +2550,39 @@ for number, text in enum :
 
 
 # reversed() => iterable بتعكس
+from functools import reduce
+
 for re in reversed(myTexts)  :
     print(re)
+    
+    
+    
+    
+# ----------------------------------
+# -- Built In Functions => Reduce --
+# ----------------------------------
+# [1] Reduce Take A Function + Iterator
+# [2] Reduce Run A Function On FIrst and Second Element And Give Result
+# [3] Then Run Function On Result And Third Element
+# [4] Then Run Function On Rsult And Fourth Element And So On
+# [5] Till One ELement is Left And This is The Result of The Reduce
+# [6] The Function Can Be Pre-Defined Function or Lambda Function
+# ---------------------------------------------------------------
+
+#  iterable و ارجع تاني امسك النتيجه و انفذها علي تالت عنصر و باقي  function و بمسك اول عنصرين انفذ عليهم  iterable علي اي  function  بنفذ 
+
+from functools import reduce
+
+def sumAll(num1, num2):
+
+  return num1 + num2
+
+numbers = [1, 8, 2, 9, 100]
+
+result = reduce(sumAll, numbers)
+
+result = reduce(lambda num1, num2: num1 + num2, numbers)
+
+print(result)
+
+# ((((1 + 8) + 2) + 9) + 100)    

@@ -1078,3 +1078,83 @@ if round(sum(l) / n) == max(0, 3, 10, 2, -100, -23, 9):
 # max = 10
 
 #------------------------------------------------------------------------------------------#
+# Built In Functions()
+# Map, Filter, Reduce
+# تكليف 01
+
+def remove_chars(characters):
+    return characters[1:-1]
+
+friends_map = ["AEmanS", "AAhmedS", "DSamehF", "LOsamaL"]
+
+cleaned_list  = map(remove_chars,friends_map)
+
+for friends in cleaned_list  :
+    
+    print(friends)
+    
+# With lambda 
+
+friends_map = ["AEmanS", "AAhmedS", "DSamehF", "LOsamaL"]
+ 
+for F in filter(lambda characters : characters[1:-1] ,friends_map)  : 
+    print(F)
+    
+    
+#------------------------------------------------------------------------------------------#
+
+# تكليف 02
+
+def get_names(name):
+    return name.endswith("m")
+
+friends_filter = ["Osama", "Wessam", "Amal", "Essam", "Gamal", "Othman"]
+
+names = filter(get_names,friends_filter)
+
+for n in names:
+    print(n)
+
+
+# With lambda 
+friends_filter = ["Osama", "Wessam", "Amal", "Essam", "Gamal", "Othman"]
+
+for N in filter(lambda name : name.endswith("m"),friends_filter):
+    print(N)
+        
+#------------------------------------------------------------------------------------------#
+
+# تكليف 03
+
+from functools import reduce
+
+def calc(num1,num2):
+    return num1 * num2
+
+nums = [2, 4, 6, 2]
+
+R = reduce(calc,nums)
+
+print(R)
+
+
+# With lambda function
+
+nums = [2, 4, 6, 2] 
+ 
+print(reduce((lambda num1 , num2 : num1 * num2) , nums )) 
+
+
+        
+#------------------------------------------------------------------------------------------#
+
+# تكليف 04
+
+
+skills = ("HTML", "CSS", 10, "PHP", "Python", 20, "JavaScript")
+reverse = reversed(skills)
+index = enumerate(reverse,50)
+
+for  i , text in index :
+    if type(text) == str :
+     print(f"{i} - {text}")
