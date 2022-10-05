@@ -2443,4 +2443,84 @@ print(a[0:])
 print(a[slice(2,-1)])
 
 
+# -------------------------------
+# -- Built In Functions => Map --
+# -------------------------------
+# [1] Map Take A Function + Iterator
+# [2] Map Called Map Because It Map The Function On Every Element
+# [3] The Function Can Be Pre-Defined Function or Lambda Function
+# ---------------------------------------------------------------
 
+#  iterator علي كل عنصر من عناصر  function بتنفذ 
+
+# Use Map With Predefined Function
+
+def formatText(text):
+
+  return f"- {text.strip().capitalize()} -"
+
+myTexts = [" OSama ", "AHMED", "  sAYed  "]
+
+myFormatedData = map(formatText, myTexts)
+
+print(myFormatedData)
+
+for name in list(map(formatText, myTexts)):
+
+  print(name)
+
+print("#" * 50)
+
+# Use Map With Lambda Function
+
+def formatText(text):
+
+  return f"- {text.strip().capitalize()} -"
+
+myTexts = [" OSama ", "AHMED", "  sAYed  "]
+
+for name in list(map((lambda text: f"- {text.strip().capitalize()} -"), myTexts)):
+
+  print(name)
+  
+  # ----------------------------------
+# -- Built In Functions => Filter --
+# ----------------------------------
+# [1] Filter Take A Function + Iterator
+# [2] Filter Run A Function On Every Element
+# [3] The Function Can Be Pre-Defined Function or Lambda Function
+# [4] Filter Out All Elements For Which The Function Return True
+# [5] The Function Need To Return Boolean Value
+# ---------------------------------------------------------------
+
+
+My_List = [1,2,3,4,5,6,7,8,9,10]
+def even(num):
+    return num % 2 == 0
+
+F = filter(even,My_List)
+for number in F:
+    print(number)
+    
+print("*" * 40)
+
+
+
+My_List = [1,2,3,4,5,6,7,8,9,10]
+for number in filter((lambda n : n % 3 == 0) ,My_List ):
+    print(number)
+    
+    
+myTexts = ["Osama", "Omer", "Omar", "Ahmed", "Sayed", "Othman"]
+def check_name(name):
+    return name.endswith("d")
+
+check =filter(check_name,myTexts)
+for c in check:
+    print(c)
+
+print("-" * 40)
+
+for NAME in filter(lambda name : name.startswith("O"),myTexts):
+    print(NAME)
+       
