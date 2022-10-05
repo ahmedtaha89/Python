@@ -2206,6 +2206,7 @@ print(Clean_Words("WWWoooorrrldd"))
 # "x" Create  Create File, Give Error If File Exists
 # --------------------------------------------------
 
+from functools import reduce
 import os
 
 # Main Current Working Directory
@@ -2533,4 +2534,44 @@ for NAME in filter(lambda name : name.startswith("O"),myTexts):
 # [4] Then Run Function On Rsult And Fourth Element And So On
 # [5] Till One ELement is Left And This is The Result of The Reduce
 # [6] The Function Can Be Pre-Defined Function or Lambda Function
-# ---------------------------------------------------------------   
+# ---------------------------------------------------------------  
+
+
+def sum_number(num1,num2):
+    return  num1 + num2
+
+mylist = [1,2,3,4,5]
+
+R = reduce(sum_number,mylist)
+
+for number in R :
+    
+    print(number)
+    
+    
+
+# ------------------------
+# -- Built In Functions --
+# ------------------------
+# enumerate()
+# help()
+# reversed()
+# ------------------------
+
+
+
+# enumerate(iterable, start=0)  iterable ل  loop بتضيف عداد لما تيجي تعمل 
+
+myTexts = ["Osama", "Omer", "Omar", "Ahmed", "Sayed", "Othman"]
+enum = enumerate(myTexts,1)
+for number, text in enum :
+ print(f"({number}) {text}")
+
+
+# help() => لو عايز تعرف خصائص اي عنصر او من الاخر عايز تعرف عنه كل حاجه 
+# print(help(print))
+
+
+# reversed() => iterable بتعكس
+for re in reversed(myTexts)  :
+    print(re)
