@@ -2629,5 +2629,16 @@ for re in reversed(myTexts)  :
 # ss("Osama")
 
 
+import pyfiglet
+import termcolor
 
+# print(dir(pyfiglet))
+print(pyfiglet.figlet_format("ABO TAHA"))
+print(termcolor.colored(pyfiglet.figlet_format("ABO TAHA"),color="red"))
+
+#     _    ____   ___    _____  _    _   _    _    
+#    / \  | __ ) / _ \  |_   _|/ \  | | | |  / \   
+#   / _ \ |  _ \| | | |   | | / _ \ | |_| | / _ \  
+#  / ___ \| |_) | |_| |   | |/ ___ \|  _  |/ ___ \ 
+# /_/   \_\____/ \___/    |_/_/   \_\_| |_/_/   \_\
 
