@@ -1,5 +1,4 @@
 {
-    "cSpell.words": [
-        "pyfiglet"
-    ]
+
+    "python.autoComplete.extraPaths":["g:\\PYTHON\\my_mod.py"]
 }
