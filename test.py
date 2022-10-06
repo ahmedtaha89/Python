@@ -2571,18 +2571,63 @@ for re in reversed(myTexts)  :
 
 #  iterable و ارجع تاني امسك النتيجه و انفذها علي تالت عنصر و باقي  function و بمسك اول عنصرين انفذ عليهم  iterable علي اي  function  بنفذ 
 
-from functools import reduce
+# from functools import reduce
 
-def sumAll(num1, num2):
+# def sumAll(num1, num2):
 
-  return num1 + num2
+#   return num1 + num2
 
-numbers = [1, 8, 2, 9, 100]
+# numbers = [1, 8, 2, 9, 100]
 
-result = reduce(sumAll, numbers)
+# result = reduce(sumAll, numbers)
 
-result = reduce(lambda num1, num2: num1 + num2, numbers)
+# result = reduce(lambda num1, num2: num1 + num2, numbers)
 
-print(result)
+# print(result)
 
-# ((((1 + 8) + 2) + 9) + 100)    
+# # ((((1 + 8) + 2) + 9) + 100)      
+
+
+
+# # -----------------------------------
+# # -- Modules => Create Your Module --
+# # -----------------------------------
+
+# import sys
+# sys.path.append(r"D:\Games")
+# print(sys.path)
+
+# import elzero
+# print(dir(elzero))
+
+# elzero.sayHello("Ahmed")
+# elzero.sayHello("Osama")
+# elzero.sayHello("Mohamed")
+
+# elzero.sayHowAreYou("Ahmed")
+# elzero.sayHowAreYou("Osama")
+# elzero.sayHowAreYou("Mohamed")
+
+# # Alias
+
+# import elzero as ee
+
+# ee.sayHello("Ahmed")
+# ee.sayHello("Osama")
+# ee.sayHello("Mohamed")
+
+# ee.sayHowAreYou("Ahmed")
+# ee.sayHowAreYou("Osama")
+# ee.sayHowAreYou("Mohamed")
+
+# from elzero import sayHello
+
+# sayHello("Osama")
+
+# from elzero import sayHello as ss
+
+# ss("Osama")
+
+
+
+
