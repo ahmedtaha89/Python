@@ -1,5 +1,5 @@
 # Python
 
-Basics  of  pyhton
+Basics  of  Python
 
 
