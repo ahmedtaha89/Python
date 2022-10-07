@@ -2642,3 +2642,8 @@ print(termcolor.colored(pyfiglet.figlet_format("ABO TAHA"),color="red"))
 #  / ___ \| |_) | |_| |   | |/ ___ \|  _  |/ ___ \ 
 # /_/   \_\____/ \___/    |_/_/   \_\_| |_/_/   \_\
 
+
+
+# -----------------------------------
+# -- Date and Time => Introduction --
+# -----------------------------------
