@@ -1,0 +1,140 @@
+diff --git a/Test_module.py b/Test_module.py
+deleted file mode 100644
+index 1164af5..0000000
+--- a/Test_module.py
++++ /dev/null
+@@ -1,12 +0,0 @@
+-def sayHi(name):
+-    print(f"Hi, {name}")
+-    
+-    
+-def enterGpa(gpa):
+-    print(f"your gpa: {gpa}")    
+-    
+-    
+-    
+-    
+-    
+-    
+\ No newline at end of file
+diff --git a/__pycache__/Module.cpython-310.pyc b/__pycache__/Module.cpython-310.pyc
+deleted file mode 100644
+index 53d74af..0000000
+Binary files a/__pycache__/Module.cpython-310.pyc and /dev/null differ
+diff --git a/__pycache__/Test_module.cpython-310.pyc b/__pycache__/Test_module.cpython-310.pyc
+deleted file mode 100644
+index 2f765d7..0000000
+Binary files a/__pycache__/Test_module.cpython-310.pyc and /dev/null differ
+diff --git a/loop.py b/loop.py
+index d3ae39b..e69de29 100644
+--- a/loop.py
++++ b/loop.py
+@@ -1,30 +0,0 @@
+-
+-# from modulefinder import Module
+-# import random 
+-# print(random)
+-# print(f"Print Random Float Number {random.random()}")
+-
+-
+-# Show All Functions Inside Module
+-# print(dir(random))
+-
+-
+-# # Import One Or Two Functions From Module
+-# from random import randint, random
+-# print(f"Print Random Float {random()}")
+-# print(f"Print Random Integer {randint(100, 900)}")
+-
+-
+-
+-
+-import Test_module as md
+-
+-# print(dir(md))
+-md.sayHi("ahmed")
+-md.enterGpa(3.2)
+-
+-
+-
+-
+-from  Test_module import sayHi 
+-md.sayHi("ali")
+\ No newline at end of file
+diff --git a/test.py b/test.py
+index 7c0c55d..b85863c 100644
+--- a/test.py
++++ b/test.py
+@@ -2571,63 +2571,18 @@ for re in reversed(myTexts)  :
+ 
+ #  iterable و ارجع تاني امسك النتيجه و انفذها علي تالت عنصر و باقي  function و بمسك اول عنصرين انفذ عليهم  iterable علي اي  function  بنفذ 
+ 
+-# from functools import reduce
+-
+-# def sumAll(num1, num2):
+-
+-#   return num1 + num2
+-
+-# numbers = [1, 8, 2, 9, 100]
+-
+-# result = reduce(sumAll, numbers)
+-
+-# result = reduce(lambda num1, num2: num1 + num2, numbers)
+-
+-# print(result)
+-
+-# # ((((1 + 8) + 2) + 9) + 100)      
+-
+-
+-
+-# # -----------------------------------
+-# # -- Modules => Create Your Module --
+-# # -----------------------------------
+-
+-# import sys
+-# sys.path.append(r"D:\Games")
+-# print(sys.path)
+-
+-# import elzero
+-# print(dir(elzero))
+-
+-# elzero.sayHello("Ahmed")
+-# elzero.sayHello("Osama")
+-# elzero.sayHello("Mohamed")
+-
+-# elzero.sayHowAreYou("Ahmed")
+-# elzero.sayHowAreYou("Osama")
+-# elzero.sayHowAreYou("Mohamed")
+-
+-# # Alias
+-
+-# import elzero as ee
+-
+-# ee.sayHello("Ahmed")
+-# ee.sayHello("Osama")
+-# ee.sayHello("Mohamed")
+-
+-# ee.sayHowAreYou("Ahmed")
+-# ee.sayHowAreYou("Osama")
+-# ee.sayHowAreYou("Mohamed")
+-
+-# from elzero import sayHello
++from functools import reduce
+ 
+-# sayHello("Osama")
++def sumAll(num1, num2):
+ 
+-# from elzero import sayHello as ss
++  return num1 + num2
+ 
+-# ss("Osama")
++numbers = [1, 8, 2, 9, 100]
+ 
++result = reduce(sumAll, numbers)
+ 
++result = reduce(lambda num1, num2: num1 + num2, numbers)
+ 
++print(result)
+ 
++# ((((1 + 8) + 2) + 9) + 100)    
+\ No newline at end of file
