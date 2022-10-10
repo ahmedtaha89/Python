@@ -10,3 +10,7 @@ ITER = iter(my_tuble)
 print(next(ITER))
 print(next(ITER))
 print(next(ITER))
+
+
+
+#
