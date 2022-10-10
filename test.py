@@ -2653,4 +2653,38 @@ import datetime
 
 
 
+# Print The Current Time
+print(f"Now: {datetime.datetime.now()}")
+# Print The Current year
+print(f"Year: {datetime.datetime.now().year}")
+# Print The Current month
+print(f"Month: {datetime.datetime.now().month}")
+# Print The Current day
+print(f"Day: {datetime.datetime.now().day}")
+# Print The Current hour
+print(f"Hour:{datetime.datetime.now().hour}")
+# Print The Current second
+print(f"Second: {datetime.datetime.now().second}")
 
+
+print(datetime.time.min)
+print(datetime.time.max)
+
+# print specific date
+print(datetime.datetime(2002,3,1,5,20,20,4545))
+
+# Print My Age 
+my_barth_day = datetime.datetime(2002,3,1)
+now = datetime.datetime.now()
+print(f"My Age: {now - my_barth_day}")
+
+# strftime() => string format time 
+# https://strftime.org
+# a => day 
+# b => month 
+# y => year
+
+print(my_barth_day.strftime("%A / %B / %Y"))
+print(datetime.datetime.now())
+print(datetime.datetime.now().strftime("%c"))
+print(datetime.datetime.now().strftime("Time Now : %X"))
