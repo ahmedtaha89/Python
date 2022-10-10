@@ -2688,3 +2688,11 @@ print(my_barth_day.strftime("%A / %B / %Y"))
 print(datetime.datetime.now())
 print(datetime.datetime.now().strftime("%c"))
 print(datetime.datetime.now().strftime("Time Now : %X"))
+
+
+
+
+
+
+
+# 
