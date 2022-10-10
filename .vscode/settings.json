@@ -5,5 +5,8 @@
     ],
     "python.analysis.extraPaths": [
         "g:\\PYTHON\\my_mod.py"
+    ],
+    "cSpell.words": [
+        "tuble"
     ]
 }
