@@ -1232,7 +1232,7 @@ print(datetime.datetime.now().strftime("%d - %b - %Y"))
 print(datetime.datetime.now().strftime("%d / %b / %y"))
 print(datetime.datetime.now().strftime("%d / %B / %Y"))
 print(datetime.datetime.now().strftime("%a, %d %B %Y"))
-# 
 
+#------------------------------------------------------------------------------------------#
 
-#
+# تكليف 01
