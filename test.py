@@ -2744,3 +2744,77 @@ name = "ahmed"
 for n in name:
     
     print(name)    
+    
+    
+    
+    
+# ----------------
+# -- Generators --
+# ----------------
+# [1] Generator is a Function With "yield" Keyword Instead of "return"
+# [2] It Support Iteration and Return Generator Iterator By Calling "yield"
+# [3] Generator Function Can Have one or More "yield"
+# [4] By Using next() It Resume From Where It Called "yield" Not From Begining
+# [5] When Called, Its Not Start Automatically, Its Only Give You The Control
+# -----------------------------------------------------------------    
+    
+    
+    
+    
+def generator():
+    
+    yield "one"
+    
+    yield "two"
+    
+    yield "three"
+    
+    yield "four"
+    
+    yield "five"
+    
+    yield "six"
+
+gen = generator()
+
+print(next(gen))    
+print(next(gen))    
+print(next(gen))    
+print(next(gen))    
+print("*"*40)
+
+for ge in gen:
+    print(ge)      
+    
+    
+    
+  # -------------------------
+# -- Decorators => Intro --
+# -------------------------
+# [1] Sometimes Called Meta Programming
+# [2] Everything in Python is Object Even Functions
+# [3] Decorator Take A Function and Add Some Functionality and Return It
+# [4] Decorator Wrap Other Function and Enhance Their Behaviour
+# [5] Decorator is Higher Order Function (Function Accept Function As Parameter)
+# ----------------------------------------------------------------------  
+    
+    
+  
+    
+    
+def myDecorator(func):
+    def nestedFunc(): 
+        
+        print("first test")
+        
+        func()
+        
+        print("final test")
+    return nestedFunc  
+
+# Sugar Syntax 
+@myDecorator
+def hello():
+    print("Hello")
+
+hello()        

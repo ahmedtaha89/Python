@@ -1,16 +1,16 @@
-my_tuble = ("ahmed","taha","ahmed","ahmed89")
+def myDecorator(func):
+    def nestedFunc(): 
+        
+        print("first test")
+        
+        func()
+        
+        print("final test")
+    return nestedFunc  
 
-for t in my_tuble:
-    print(t,end=" - ")
+# Sugar Syntax 
+@myDecorator
+def hello():
+    print("Hello")
 
-print("-" * 40)
-
-ITER = iter(my_tuble)
-
-print(next(ITER))
-print(next(ITER))
-print(next(ITER))
-
-
-
-#
+hello()    
