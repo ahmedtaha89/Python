@@ -1237,4 +1237,40 @@ print(datetime.datetime.now().strftime("%a, %d %B %Y"))
 
 # تكليف 01
 
-# test
+def reverse_string(my_string):
+  for str in my_string[-1::-1]:
+    yield str
+
+# Reverse The String
+for c in reverse_string("Elzero"):
+  print(c)
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 02
+
+def mydecorator(func):
+    
+    def moka_coffe():
+        
+        print("Sugar Added From Decorators")
+        func()
+        print("####################")
+        
+        return moka_coffe
+  
+
+  
+@mydecorator   
+def make_tea():
+  return("Tea Created")
+  
+@mydecorator  
+def make_coffe():
+  return("Coffe Created")
+  
+
+print(make_tea())
+print(make_coffe())
+
+#------------------------------------------------------------------------------------------#

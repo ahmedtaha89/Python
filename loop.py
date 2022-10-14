@@ -1,16 +1,8 @@
-def myDecorator(func):
-    def nestedFunc(): 
-        
-        print("first test")
-        
-        func()
-        
-        print("final test")
-    return nestedFunc  
 
-# Sugar Syntax 
-@myDecorator
-def hello():
-    print("Hello")
+def reverse_string(my_string):
+  for str in my_string[-1::-1]:
+    yield str
 
-hello()    
+# Reverse The String
+for c in reverse_string("Elzero"):
+  print(c)
