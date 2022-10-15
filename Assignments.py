@@ -1180,23 +1180,23 @@ print(f"Random Odd Number Between 1 And 9 => {random.randrange(1,9,2)}")
 # sys.path.append(r"G:\PYTHON")
 # print(sys.path)
 
-import my_mod as md
-print(dir(md))
-md.say_hello("ahmed".strip().capitalize())
-md.say_welcome("ahmed".strip().capitalize())
+# import my_mod as md
+# print(dir(md))
+# md.say_hello("ahmed".strip().capitalize())
+# md.say_welcome("ahmed".strip().capitalize())
 
-#------------------------------------------------------------------------------------------#
+# #------------------------------------------------------------------------------------------#
 
-# تكليف 03
-from my_mod import say_welcome 
-say_welcome("ahmed")
+# # تكليف 03
+# from my_mod import say_welcome 
+# say_welcome("ahmed")
 
 
-#------------------------------------------------------------------------------------------#
+# #------------------------------------------------------------------------------------------#
 
-# تكليف 04
-from  my_mod import say_welcome as new_welcome 
-new_welcome("Taha")
+# # تكليف 04 
+# from  my_mod import say_welcome as new_welcome 
+# new_welcome("Taha")
 
 
 #------------------------------------------------------------------------------------------#

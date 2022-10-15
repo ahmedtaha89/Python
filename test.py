@@ -2838,9 +2838,6 @@ def myDecorator(func):  # Decorator
   return firstfunc  # Return All Data
 
 
-
-
-
 def myDecoratorTwo(func):  # Decorator
 
   def nestedFunc(num1, num2):  # Any Name Its Just For Decoration
@@ -2859,3 +2856,56 @@ def calculate(n1, n2):
   print(n1 + n2)
 
 calculate(-5, 90)
+
+# ----------------------------------------------------
+# -- Practical => Loop on Many Iterators With Zip() --
+# ----------------------------------------------------
+# zip() Return A Zip Object Contains All Objects
+# zip() Length Is The Length of Lowest Object
+# ------------------------------------------------
+
+
+L1 = [1,2,3,4,5]
+L2 = ["a","b","c"]
+
+for item in zip(L1,L2):
+    print(item)
+    
+    
+    
+    
+from rembg import remove
+from PIL import Image
+# treka=Image.open("F:\Python\Images\Abokreka.jpg")
+# treka.show()
+# box = (100, 100, 400, 400)
+# new_image = treka.crop(box)
+# new_image.show()
+# print(treka.format, treka.size, treka.mode)
+# input_path = 'F:\Python\Images\Abokreka.jpg'
+# output_path = 'output.jpg'
+# input = Image.open(input_path)
+# output = remove(input)
+# output.save(output_path)    
+    
+    
+    
+    
+    
+# --------------------------------------------
+# -- Doc String & Commenting vs Documenting --
+# --------------------------------------------
+# [1] Documentation String For Class, Module or Function
+# [2] Can Be Accessed From The Help and Doc Attributes
+# [3] Made For Understanding The Functionality of The Complex Code
+# [4] Theres One Line and Multiple Line Doc Strings
+# -------------------------------------------------
+
+
+def say_hello(name):
+    ''' This is the first Documenting '''
+    print(f"Hi, {name}") 
+
+say_hello("Ahmed")    
+help(say_hello)
+print(say_hello.__doc__)
