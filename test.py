@@ -2902,10 +2902,75 @@ from PIL import Image
 # -------------------------------------------------
 
 
-def say_hello(name):
-    ''' This is the first Documenting '''
-    print(f"Hi, {name}") 
+# def say_hello(name):
+#     ''' This is the first Documenting '''
+#     print(f"Hi, {name}") 
 
-say_hello("Ahmed")    
-help(say_hello)
-print(say_hello.__doc__)
+# say_hello("Ahmed")    
+# help(say_hello)
+# print(say_hello.__doc__)
+
+
+# -----------------------------------
+# -- Errors And Exceptions Raising --
+# -----------------------------------
+# [1] Exceptions Is A Runtime Error Reporting Mechanism
+# [2] Exception Gives You The Message To Understand The Problem
+# [3] Traceback Gives You The Line To Look For The Code in This Line
+# [4] Exceptions Have Types (SyntaxError, IndexError, KeyError, Etc...)
+# [5] Exceptions List https://docs.python.org/3/library/exceptions.html
+# [6] raise Keyword Used To Raise Your Own Exceptions
+# -----------------------------------------------------------------
+
+a = int(input())
+b = int(input())
+
+if b < 0 :
+    raise z(f"{(b)} less than zero.")
+else:
+    print(f"div{a} / {b} = {a/b}")   
+    
+    
+    
+# -----------------------------------
+# --      Exceptions Handling      --
+# -- Try | Except | Else | Finally --
+# -----------------------------------
+# Try     => Test The Code For Errors
+# Except  => Handle The Errors
+# ----------------------------
+# Else    => If No Errors
+# Finally => Run The Code
+# ------------------------
+
+
+age = int(input())
+
+try:
+    
+    print(f"You Age Is : {age} Year")
+
+    
+except:
+    
+    print("please enter correct number.")
+    
+ # -----------------------------------------------------------------#
+   
+    
+try:
+    age = int(input("Enter Your age: "))
+    
+    print(f"You Age Is : {age} Year")
+
+    
+except ValueError:
+    
+    print("please enter correct number.")
+    
+    
+else :
+    print("Done")
+    
+finally:
+    print("This is the second lesson in exception error.")
