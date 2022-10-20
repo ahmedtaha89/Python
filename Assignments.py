@@ -1273,4 +1273,44 @@ def make_coffe():
 print(make_tea())
 print(make_coffe())
 
+
+
+#------------------------------------------------------------------------------------------#
+
+# Error Handling & Debugging 
+# From 90 To 94 
+
+
+# تكليف 01
+NUM = input("Add Your Number ")
+
+if len(NUM) > 1:
+    raise IndexError ("Only One Character Allowed")
+elif NUM == 0:
+    print("ValueError: Number Must Be Larger Than 0")
+    
+    
+elif NUM == str :
+    raise Exception ("Only Numbers Allowed")    
+ 
+else:
+    
+    print("####################")
+    print(f"The Number Is {NUM}")
+    print("####################")
+    
+
+
+
+
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 03
+
+def calculate(num1, num2) -> int :
+  return num1 + num2
+
+print(calculate(20, 30))
+
 #------------------------------------------------------------------------------------------#

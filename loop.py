@@ -1,51 +1,35 @@
-# number_tries = 4
-# the_file = None
+# from re import split, sub
 
-# while number_tries > 0 :
-    
-#     try:
-#         print("Enter The File Name With Absolute Path To Open")
-#         print(f"You have {number_tries} tries.")
-#         print("EX:F:\Test virtual\Project")
-        
-#         input_file = str(input())
-        
-#         the_file = open(input_file,"r")
-        
-#         print(the_file.read())
-#     except:
-#         print("the path is not correct try again.")
-#         number_tries-=1
-        
-#     finally:
-       
-#      if the_file is not None:
-
-#         the_file.close()
-# else : 
-#     print("All try finished")
-
-# from turtle import * 
-# color("red")
-# begin_fill()
-# pensize(3)
-# left(50)
-# forward(133)
-# circle(50,200)
-# right(140)
-# circle(50,200)
-# end_fill()
+import re
+# string = "My Name-Ahmed Taha"
+# split = re.split(r"\s|-",string,2)
+# print(split)
 
 
+# # sub = replace 
+# print(sub(r"\s",r"\t ","My Name Ahmed Taha",2))
 
 
-NUM = input("Add Your Number ")
-if len(NUM) == 1 :
-    
-        print("####################")
-        print(f"The Number Is {NUM}")
-        print("####################")
-  
-          
-raise IndexError ("Only One Character Allowed") 
-raise 
+# ------------------------------------------------------
+# -- Regular Expressions => Group Trainings And Flags --
+# ------------------------------------------------------
+
+import re
+
+my_web = "https://www.elzero.org:8080/category.php?article=105?name=how-to-do"
+
+search = re.search(r"(https?)://(www)?\.?(\w+)\.(\w+):?(\d+)?/?(.+)", my_web)
+
+print(search.group())
+print(search.groups())
+
+for group in search.groups():
+
+  print(group)
+
+print(f"Protocol: {search.group(1)}")
+print(f"Sub Domain: {search.group(2)}")
+print(f"Domain Name: {search.group(3)}")
+print(f"Top Level Domain: {search.group(4)}")
+print(f"Port: {search.group(5)}")
+print(f"Query String: {search.group(6)}")
