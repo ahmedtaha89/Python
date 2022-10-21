@@ -1,35 +1,11 @@
-# from re import split, sub
+# Create list baseball
+baseball = [180, 215, 210, 210, 188, 176, 209, 200]
 
-import re
-# string = "My Name-Ahmed Taha"
-# split = re.split(r"\s|-",string,2)
-# print(split)
+# Import the numpy package as np
+import numpy as np 
 
+# Create a numpy array from baseball: np_baseball
+np_baseball = np.array(baseball)
 
-# # sub = replace 
-# print(sub(r"\s",r"\t ","My Name Ahmed Taha",2))
-
-
-# ------------------------------------------------------
-# -- Regular Expressions => Group Trainings And Flags --
-# ------------------------------------------------------
-
-import re
-
-my_web = "https://www.elzero.org:8080/category.php?article=105?name=how-to-do"
-
-search = re.search(r"(https?)://(www)?\.?(\w+)\.(\w+):?(\d+)?/?(.+)", my_web)
-
-print(search.group())
-print(search.groups())
-
-for group in search.groups():
-
-  print(group)
-
-print(f"Protocol: {search.group(1)}")
-print(f"Sub Domain: {search.group(2)}")
-print(f"Domain Name: {search.group(3)}")
-print(f"Top Level Domain: {search.group(4)}")
-print(f"Port: {search.group(5)}")
-print(f"Query String: {search.group(6)}")
+# Print out type of np_baseball
+print(type(np_baseball))
