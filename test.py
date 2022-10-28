@@ -1,4 +1,5 @@
 #  -------------------------------
+*****
 #  Information About File
 #  License
 #  Who Created The File
@@ -7,6 +8,7 @@
 #  Write Beside The Programming Line
 #  Write Before The Programming Line
 #  Prevent Code From Run
+*****
 #  -------------------------------
 
 # Indentation
