@@ -2206,6 +2206,7 @@ print(Clean_Words("WWWoooorrrldd"))
 # "x" Create  Create File, Give Error If File Exists
 # --------------------------------------------------
 
+from functools import reduce
 import os
 
 # Main Current Working Directory
@@ -2399,6 +2400,7 @@ print("Hello", "Osama", "How", "Are", "You", sep=" - ")
 
 
 
+
  
 # ------------------------
 # -- Built In Functions --
@@ -2440,3 +2442,804 @@ print(a[0:])
 
 
 print(a[slice(2,-1)])
+
+
+# -------------------------------
+# -- Built In Functions => Map --
+# -------------------------------
+# [1] Map Take A Function + Iterator
+# [2] Map Called Map Because It Map The Function On Every Element
+# [3] The Function Can Be Pre-Defined Function or Lambda Function
+# ---------------------------------------------------------------
+
+#  iterator علي كل عنصر من عناصر  function بتنفذ 
+
+# Use Map With Predefined Function
+
+def formatText(text):
+
+  return f"- {text.strip().capitalize()} -"
+
+myTexts = [" OSama ", "AHMED", "  sAYed  "]
+
+myFormatedData = map(formatText, myTexts)
+
+print(myFormatedData)
+
+for name in list(map(formatText, myTexts)):
+
+  print(name)
+
+print("#" * 50)
+
+# Use Map With Lambda Function
+
+def formatText(text):
+
+  return f"- {text.strip().capitalize()} -"
+
+myTexts = [" OSama ", "AHMED", "  sAYed  "]
+
+for name in list(map((lambda text: f"- {text.strip().capitalize()} -"), myTexts)):
+
+  print(name)
+  
+  # ----------------------------------
+# -- Built In Functions => Filter --
+# ----------------------------------
+# [1] Filter Take A Function + Iterator
+# [2] Filter Run A Function On Every Element
+# [3] The Function Can Be Pre-Defined Function or Lambda Function
+# [4] Filter Out All Elements For Which The Function Return True
+# [5] The Function Need To Return Boolean Value
+# ---------------------------------------------------------------
+
+
+My_List = [1,2,3,4,5,6,7,8,9,10]
+def even(num):
+    return num % 2 == 0
+
+F = filter(even,My_List)
+for number in F:
+    print(number)
+    
+print("*" * 40)
+
+
+
+My_List = [1,2,3,4,5,6,7,8,9,10]
+for number in filter((lambda n : n % 3 == 0) ,My_List ):
+    print(number)
+    
+    
+myTexts = ["Osama", "Omer", "Omar", "Ahmed", "Sayed", "Othman"]
+def check_name(name):
+    return name.endswith("d")
+
+check =filter(check_name,myTexts)
+for c in check:
+    print(c)
+
+print("-" * 40)
+
+for NAME in filter(lambda name : name.startswith("O"),myTexts):
+    print(NAME)
+    
+
+
+# ------------------------
+# -- Built In Functions --
+# ------------------------
+# enumerate()
+# help()
+# reversed()
+# ------------------------
+
+
+
+# enumerate(iterable, start=0)  iterable ل  loop بتضيف عداد لما تيجي تعمل 
+
+myTexts = ["Osama", "Omer", "Omar", "Ahmed", "Sayed", "Othman"]
+enum = enumerate(myTexts,1)
+for number, text in enum :
+ print(f"({number}) {text}")
+
+
+# help() => لو عايز تعرف خصائص اي عنصر او من الاخر عايز تعرف عنه كل حاجه 
+# print(help(print))
+
+
+# reversed() => iterable بتعكس
+from functools import reduce
+
+for re in reversed(myTexts)  :
+    print(re)
+    
+    
+    
+    
+# ----------------------------------
+# -- Built In Functions => Reduce --
+# ----------------------------------
+# [1] Reduce Take A Function + Iterator
+# [2] Reduce Run A Function On FIrst and Second Element And Give Result
+# [3] Then Run Function On Result And Third Element
+# [4] Then Run Function On Rsult And Fourth Element And So On
+# [5] Till One ELement is Left And This is The Result of The Reduce
+# [6] The Function Can Be Pre-Defined Function or Lambda Function
+# ---------------------------------------------------------------
+
+#  iterable و ارجع تاني امسك النتيجه و انفذها علي تالت عنصر و باقي  function و بمسك اول عنصرين انفذ عليهم  iterable علي اي  function  بنفذ 
+
+# from functools import reduce
+
+# def sumAll(num1, num2):
+
+#   return num1 + num2
+
+# numbers = [1, 8, 2, 9, 100]
+
+# result = reduce(sumAll, numbers)
+
+# result = reduce(lambda num1, num2: num1 + num2, numbers)
+
+# print(result)
+
+# # ((((1 + 8) + 2) + 9) + 100)      
+
+
+
+# # -----------------------------------
+# # -- Modules => Create Your Module --
+# # -----------------------------------
+
+# import sys
+# sys.path.append(r"D:\Games")
+# print(sys.path)
+
+# import elzero
+# print(dir(elzero))
+
+# elzero.sayHello("Ahmed")
+# elzero.sayHello("Osama")
+# elzero.sayHello("Mohamed")
+
+# elzero.sayHowAreYou("Ahmed")
+# elzero.sayHowAreYou("Osama")
+# elzero.sayHowAreYou("Mohamed")
+
+# # Alias
+
+# import elzero as ee
+
+# ee.sayHello("Ahmed")
+# ee.sayHello("Osama")
+# ee.sayHello("Mohamed")
+
+# ee.sayHowAreYou("Ahmed")
+# ee.sayHowAreYou("Osama")
+# ee.sayHowAreYou("Mohamed")
+
+# from elzero import sayHello
+
+# sayHello("Osama")
+
+# from elzero import sayHello as ss
+
+# ss("Osama")
+
+
+import pyfiglet
+import termcolor
+
+# print(dir(pyfiglet))
+print(pyfiglet.figlet_format("ABO TAHA"))
+print(termcolor.colored(pyfiglet.figlet_format("ABO TAHA"),color="red"))
+
+#     _    ____   ___    _____  _    _   _    _    
+#    / \  | __ ) / _ \  |_   _|/ \  | | | |  / \   
+#   / _ \ |  _ \| | | |   | | / _ \ | |_| | / _ \  
+#  / ___ \| |_) | |_| |   | |/ ___ \|  _  |/ ___ \ 
+# /_/   \_\____/ \___/    |_/_/   \_\_| |_/_/   \_\
+
+
+
+# -----------------------------------
+# -- Date and Time => Introduction --
+# -----------------------------------
+
+# Date 
+import datetime
+
+
+
+# Print The Current Time
+print(f"Now: {datetime.datetime.now()}")
+# Print The Current year
+print(f"Year: {datetime.datetime.now().year}")
+# Print The Current month
+print(f"Month: {datetime.datetime.now().month}")
+# Print The Current day
+print(f"Day: {datetime.datetime.now().day}")
+# Print The Current hour
+print(f"Hour:{datetime.datetime.now().hour}")
+# Print The Current second
+print(f"Second: {datetime.datetime.now().second}")
+
+
+print(datetime.time.min)
+print(datetime.time.max)
+
+# print specific date
+print(datetime.datetime(2002,3,1,5,20,20,4545))
+
+# Print My Age 
+my_barth_day = datetime.datetime(2002,3,1)
+now = datetime.datetime.now()
+print(f"My Age: {now - my_barth_day}")
+
+# strftime() => string format time 
+# https://strftime.org
+# a => day 
+# b => month 
+# y => year
+
+print(my_barth_day.strftime("%A / %B / %Y"))
+print(datetime.datetime.now())
+print(datetime.datetime.now().strftime("%c"))
+print(datetime.datetime.now().strftime("Time Now : %X"))
+
+
+# --------------------------
+# -- Iterable vs Iterator --
+# --------------------------
+# Iterable
+# [1] Object Contains Data That Can Be Iterated Upon
+# [2] Examples (String, List, Set, Tuple, Dictionary)
+# ------------------------------------------
+# Iterator
+# [1] Object Used To Iterate Over Iterable Using next() Method Return 1 Element At A Time
+# [2] You Can Generate Iterator From Iterable When Using iter() Method
+# [3] For Loop Already Calls iter() Method on The Iterable Behind The Scene
+# [4] Gives "StopIteration" If Theres No Next Element
+# -----------------------------------------------------------
+
+myString = "Osama"
+
+myList = [1, 2, 3, 4, 5]
+
+for letter in myString:
+
+  print(letter, end=" ")
+
+for number in myList:
+
+  print(number, end=" ")
+
+myIterator = iter(myString)
+
+print(next(myIterator))
+print(next(myIterator))
+print(next(myIterator))
+print(next(myIterator))
+print(next(myIterator))
+print(next(myIterator))
+
+for letter in iter("Elzero"):
+
+  print(letter, end=" ")
+
+ 
+# iterable  => loop اقدر اعمل عليه  object  اي 
+
+
+My_List = [1,2,3,4,5]
+
+for l in My_List :
+    
+    print(l ,end="\t \t")
+    
+name = "ahmed"
+
+for n in name:
+    
+    print(name)    
+    
+    
+    
+    
+# ----------------
+# -- Generators --
+# ----------------
+# [1] Generator is a Function With "yield" Keyword Instead of "return"
+# [2] It Support Iteration and Return Generator Iterator By Calling "yield"
+# [3] Generator Function Can Have one or More "yield"
+# [4] By Using next() It Resume From Where It Called "yield" Not From Begining
+# [5] When Called, Its Not Start Automatically, Its Only Give You The Control
+# -----------------------------------------------------------------    
+    
+    
+    
+    
+def generator():
+    
+    yield "one"
+    
+    yield "two"
+    
+    yield "three"
+    
+    yield "four"
+    
+    yield "five"
+    
+    yield "six"
+
+gen = generator()
+
+print(next(gen))    
+print(next(gen))    
+print(next(gen))    
+print(next(gen))    
+print("*"*40)
+
+for ge in gen:
+    print(ge)      
+    
+    
+    
+  # -------------------------
+# -- Decorators => Intro --
+# -------------------------
+# [1] Sometimes Called Meta Programming
+# [2] Everything in Python is Object Even Functions
+# [3] Decorator Take A Function and Add Some Functionality and Return It
+# [4] Decorator Wrap Other Function and Enhance Their Behaviour
+# [5] Decorator is Higher Order Function (Function Accept Function As Parameter)
+# ----------------------------------------------------------------------  
+    
+    
+  
+    
+    
+def myDecorator(func):
+    def nestedFunc(): 
+        
+        print("first test")
+        
+        func()
+        
+        print("final test")
+    return nestedFunc  
+
+# Sugar Syntax 
+@myDecorator
+def hello():
+    print("Hello")
+
+hello()        
+
+
+
+# --------------------------------------------
+# -- Decorators => Function With Parameters --
+# --------------------------------------------
+
+def myDecorator(func):  # Decorator
+
+  def firstfunc(num1, num2):  # Any Name Its Just For Decoration
+
+    if num1 < 0 or num2 < 0:
+
+      print("Beware One Of The Numbers Is Less Than Zero")
+
+    func(num1, num2)  # Execute Function
+
+  return firstfunc  # Return All Data
+
+
+def myDecoratorTwo(func):  # Decorator
+
+  def nestedFunc(num1, num2):  # Any Name Its Just For Decoration
+
+    print("Coming From Decorator Two")
+
+    func(num1, num2)  # Execute Function
+
+  return nestedFunc  # Return All Data
+
+@myDecorator
+@myDecoratorTwo
+
+def calculate(n1, n2):
+
+  print(n1 + n2)
+
+calculate(-5, 90)
+
+# ----------------------------------------------------
+# -- Practical => Loop on Many Iterators With Zip() --
+# ----------------------------------------------------
+# zip() Return A Zip Object Contains All Objects
+# zip() Length Is The Length of Lowest Object
+# ------------------------------------------------
+
+
+L1 = [1,2,3,4,5]
+L2 = ["a","b","c"]
+
+for item in zip(L1,L2):
+    print(item)
+    
+    
+    
+    
+from rembg import remove
+from PIL import Image
+# treka=Image.open("F:\Python\Images\Abokreka.jpg")
+# treka.show()
+# box = (100, 100, 400, 400)
+# new_image = treka.crop(box)
+# new_image.show()
+# print(treka.format, treka.size, treka.mode)
+# input_path = 'F:\Python\Images\Abokreka.jpg'
+# output_path = 'output.jpg'
+# input = Image.open(input_path)
+# output = remove(input)
+# output.save(output_path)    
+    
+    
+    
+    
+    
+# --------------------------------------------
+# -- Doc String & Commenting vs Documenting --
+# --------------------------------------------
+# [1] Documentation String For Class, Module or Function
+# [2] Can Be Accessed From The Help and Doc Attributes
+# [3] Made For Understanding The Functionality of The Complex Code
+# [4] Theres One Line and Multiple Line Doc Strings
+# -------------------------------------------------
+
+
+# def say_hello(name):
+#     ''' This is the first Documenting '''
+#     print(f"Hi, {name}") 
+
+# say_hello("Ahmed")    
+# help(say_hello)
+# print(say_hello.__doc__)
+
+
+# -----------------------------------
+# -- Errors And Exceptions Raising --
+# -----------------------------------
+# [1] Exceptions Is A Runtime Error Reporting Mechanism
+# [2] Exception Gives You The Message To Understand The Problem
+# [3] Traceback Gives You The Line To Look For The Code in This Line
+# [4] Exceptions Have Types (SyntaxError, IndexError, KeyError, Etc...)
+# [5] Exceptions List https://docs.python.org/3/library/exceptions.html
+# [6] raise Keyword Used To Raise Your Own Exceptions
+# -----------------------------------------------------------------
+
+a = int(input())
+b = int(input())
+
+if b < 0 :
+    raise z(f"{(b)} less than zero.")
+else:
+    print(f"div{a} / {b} = {a/b}")   
+    
+    
+    
+# -----------------------------------
+# --      Exceptions Handling      --
+# -- Try | Except | Else | Finally --
+# -----------------------------------
+# Try     => Test The Code For Errors
+# Except  => Handle The Errors
+# ----------------------------
+# Else    => If No Errors
+# Finally => Run The Code
+# ------------------------
+
+
+age = int(input())
+
+try:
+    
+    print(f"You Age Is : {age} Year")
+
+    
+except:
+    
+    print("please enter correct number.")
+    
+ # -----------------------------------------------------------------#
+   
+    
+try:
+    age = int(input("Enter Your age: "))
+    
+    print(f"You Age Is : {age} Year")
+
+    
+except ValueError:
+    
+    print("please enter correct number.")
+    
+    
+else :
+    print("Done")
+    
+finally:
+    print("This is the second lesson in exception error.")
+# -----------------------------------------------------------------#
+
+# -----------------------------------
+# --      Exceptions Handling      --
+# -- Try | Except | Else | Finally --
+# --       Advanced Example        --
+# -----------------------------------
+
+the_file = None
+
+the_tries = 5
+
+while the_tries > 0:
+
+  try:  # Try To Open The File
+
+    print("Enter The File Name With Absolute Path To Open")
+
+    print(f"You Have {the_tries} Tries Left")
+
+    print("Example: D:\Python\Files\yourfile.extension")
+
+    file_name_and_path = input("File Name => : ").strip()
+
+    the_file = open(file_name_and_path, 'r')
+
+    print(the_file.read())
+
+    break
+
+  except FileNotFoundError:
+
+    print("File Not Found Please Be Sure The Name is Valid")
+
+    the_tries -= 1
+
+  except:
+
+    print("Error Happen")
+
+  finally:
+
+    if the_file is not None:
+
+      the_file.close()
+
+      print("File Closed.")
+
+else:
+
+  print("All Tries Is Done")
+  
+  
+  # --------------------
+# -- Debugging Code --
+# --------------------
+
+my_list = [1, 2, 3]
+
+my_dictionary = {"Name": "Osama", "Age": 36, "Country": "Egypt"}
+
+for num in my_list:
+
+  print(num)
+
+for key, value in my_dictionary.items():
+
+  print(f"{key} => {value}")
+
+def function_one_one():
+
+  print("Hello From Function One")
+
+function_one_one()
+
+
+# ------------------
+# -- Type Hinting --
+# ------------------
+
+# parameters  مجرد تلميح لنوع 
+
+def Say_Hello(name) -> str:
+    print(("Hello, {:s}" .format(name)))
+Say_Hello("ahmed")    
+
+
+# ----------------------------------
+# -- Regular Expressions => Intro --
+# ----------------------------------
+# [1] Sequence of Characters That Define A Search Pattern
+# [2] Regular Expression is Not In Python Its General Concept
+# [3] Used In [Credit Card Validation, IP Address Validation, Email Validation]
+# [4] Test RegEx "https://pythex.org/"
+# [5] Characters Sheet "https://www.debuggex.com/cheatsheet/regex/python"
+# -----------------------------------------------------------
+
+
+
+
+# ----------------------------------------------------
+# -- Regular Expressions => Logical Or And Escaping --
+# ----------------------------------------------------
+# |	  Or
+# \	  Escape Special Characters
+# ()  Separate Groups
+# -----------------------------
+
+
+
+# (\d-|\d\)|\d>) (\w+)
+# 1) python
+# 2) test
+# 3) css
+
+# 1- python
+# 2- test
+# 3- css
+
+# 1> python
+# 2> test
+# 3> css
+
+
+
+
+# https?://\w.+.(com|net|org)
+# https://fantasy.premierleague.com
+# https://elzero.org
+# https://elzero.com
+# http://elzero.com
+# https://fantasy.com
+
+
+# ---------------------------------------------------------
+# -- Regular Expressions => Re Module Search And FindAll --
+# ---------------------------------------------------------
+# search()  => Search A String For A Match And Return A First Match Only
+# findall() => Returns A List Of All Matches and Empty List if No Match
+# ---------------------------------------------------------------------
+# Email Pattern => [A-z0-9\.]+@[A-z0-9]+\.(com|net|org|info)
+# ----------------------------------------------------------
+
+import re
+
+my_search = re.search(r"[A-Z]{2}", "OOsamaEElzero")
+
+print(my_search)
+print(my_search.span())
+print(my_search.string)
+print(my_search.group())
+
+is_email = re.search(r"[A-z0-9\.]+@[A-z0-9]+\.(com|net)", "os@osama.com")
+
+if is_email:
+
+  print("This is A Valid Email")
+
+  print(is_email.span())
+  print(is_email.string)
+  print(is_email.group())
+
+else:
+
+  print("This is Not A Valid Email")
+
+email_input = input("Please Write Your Email: ")
+
+search = re.findall(r"[A-z0-9\.]+@[A-z0-9]+\.com|net", email_input)
+
+empty_list = []
+
+if search != []:
+
+  empty_list.append(search)
+
+  print("Email Added")
+
+else:
+
+  print("Invalid Email")
+
+for email in empty_list:
+
+  print(email)
+  
+  
+  
+# ----------------------------------------------------
+# -- Regular Expressions => Re Module Split And Sub --
+# ----------------------------------------------------
+# split(Pattern, String, MaxSplit)  => Return A List Of Elements Splitted On Each Match
+# sub(Pattern, Replace, String, ReplaceCount) => Replace Matches With What You Want
+# ---------------------------------------------------------------------
+
+import re
+
+string_one = "I Love Python Programming Language"
+
+search_one = re.split(r"\s", string_one, 1)
+
+print(search_one)
+
+print("#" * 50)
+
+string_two = "How-To_Write_A_Very-Good-Article"
+
+search_two = re.split(r"-|_", string_two)
+
+print(search_two)
+
+print("#" * 50)
+
+# Get Words From URL
+
+for counter, word in enumerate(search_two, 1):
+
+  if len(word) == 1:
+
+    continue
+
+  print(f"Word Number: {counter} => {word.lower()}")
+
+print("#" * 50)
+
+my_string = "I Love Python"
+
+print(re.sub(r"\s", "-", my_string, 1))
+
+
+
+
+
+
+# from re import split, sub
+
+import re
+# string = "My Name-Ahmed Taha"
+# split = re.split(r"\s|-",string,2)
+# print(split)
+
+
+# # sub = replace 
+# print(sub(r"\s",r"\t ","My Name Ahmed Taha",2))
+
+
+# ------------------------------------------------------
+# -- Regular Expressions => Group Trainings And Flags --
+# ------------------------------------------------------
+
+import re
+
+my_web = "https://www.elzero.org:8080/category.php?article=105?name=how-to-do"
+
+search = re.search(r"(https?)://(www)?\.?(\w+)\.(\w+):?(\d+)?/?(.+)", my_web)
+
+print(search.group())
+print(search.groups())
+
+for group in search.groups():
+
+  print(group)
+
+print(f"Protocol: {search.group(1)}")
+print(f"Sub Domain: {search.group(2)}")
+print(f"Domain Name: {search.group(3)}")
+print(f"Top Level Domain: {search.group(4)}")
+print(f"Port: {search.group(5)}")
+print(f"Query String: {search.group(6)}")

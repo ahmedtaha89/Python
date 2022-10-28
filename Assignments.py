@@ -1060,7 +1060,6 @@ print(sum(my_range, v) + pow(v, v, v))
 # Built In Functions()
 # تكليف 03
 
-
 n = 21
 
 
@@ -1077,3 +1076,272 @@ if round(sum(l) / n) == max(0, 3, 10, 2, -100, -23, 9):
 # Output => Good
 
 # max = 10
+
+#------------------------------------------------------------------------------------------#
+# Built In Functions()
+# Map, Filter, Reduce
+# تكليف 01
+
+def remove_chars(characters):
+    return characters[1:-1]
+
+friends_map = ["AEmanS", "AAhmedS", "DSamehF", "LOsamaL"]
+
+cleaned_list  = map(remove_chars,friends_map)
+
+for friends in cleaned_list  :
+    
+    print(friends)
+    
+# With lambda 
+
+friends_map = ["AEmanS", "AAhmedS", "DSamehF", "LOsamaL"]
+ 
+for F in filter(lambda characters : characters[1:-1] ,friends_map)  : 
+    print(F)
+    
+    
+#------------------------------------------------------------------------------------------#
+
+# تكليف 02
+
+def get_names(name):
+    return name.endswith("m")
+
+friends_filter = ["Osama", "Wessam", "Amal", "Essam", "Gamal", "Othman"]
+
+names = filter(get_names,friends_filter)
+
+for n in names:
+    print(n)
+
+
+# With lambda 
+friends_filter = ["Osama", "Wessam", "Amal", "Essam", "Gamal", "Othman"]
+
+for N in filter(lambda name : name.endswith("m"),friends_filter):
+    print(N)
+        
+#------------------------------------------------------------------------------------------#
+
+# تكليف 03
+
+from functools import reduce
+
+def calc(num1,num2):
+    return num1 * num2
+
+nums = [2, 4, 6, 2]
+
+R = reduce(calc,nums)
+
+print(R)
+
+
+# With lambda function
+
+nums = [2, 4, 6, 2] 
+ 
+print(reduce((lambda num1 , num2 : num1 * num2) , nums )) 
+
+
+        
+#------------------------------------------------------------------------------------------#
+
+# تكليف 04
+
+
+skills = ("HTML", "CSS", 10, "PHP", "Python", 20, "JavaScript")
+reverse = reversed(skills)
+index = enumerate(reverse,50)
+
+for  i , text in index :
+    if type(text) == str :
+     print(f"{i} - {text}")
+
+
+
+
+#------------------------------------------------------------------------------------------#
+
+# Modules & Packages
+# تكليف 01
+
+import random
+print(f"Random Number Between 10 And 50 => {random.randrange(10,50)}")
+print(f"Random Even Number Between 2 And 10 => {random.randrange(2,10,2)}")
+print(f"Random Odd Number Between 1 And 9 => {random.randrange(1,9,2)}")
+
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 02
+# import sys
+# sys.path.append(r"G:\PYTHON")
+# print(sys.path)
+
+# import my_mod as md
+# print(dir(md))
+# md.say_hello("ahmed".strip().capitalize())
+# md.say_welcome("ahmed".strip().capitalize())
+
+# #------------------------------------------------------------------------------------------#
+
+# # تكليف 03
+# from my_mod import say_welcome 
+# say_welcome("ahmed")
+
+
+# #------------------------------------------------------------------------------------------#
+
+# # تكليف 04 
+# from  my_mod import say_welcome as new_welcome 
+# new_welcome("Taha")
+
+
+#------------------------------------------------------------------------------------------#
+
+# Date & Time (79 - 80)
+# تكليف 01
+
+# The Date Is "2021, 6, 25"
+# Today Is "2021, 8, 10"
+
+# Message Will Be
+# "Days From 2021-06-25 To 2021-08-10 Is => 46"
+
+import datetime 
+
+Date = datetime.datetime(2021,6,25)
+Now  = datetime.datetime.now()
+print(f"Days From 2021-06-25 To 2022-10-9 Is => {(Now - Date).days}") 
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 02
+
+# Today Is "2021, 8, 10"
+"2021-08-10"
+"Aug 10, 2021"
+"10 - Aug - 2021"
+"10 / Aug / 21"
+"10 / August / 2021"
+"Tue, 10 August 2021"
+print(datetime.datetime.now().strftime("%b %d, %Y"))
+print(datetime.datetime.now().strftime("%d - %b - %Y"))
+print(datetime.datetime.now().strftime("%d / %b / %y"))
+print(datetime.datetime.now().strftime("%d / %B / %Y"))
+print(datetime.datetime.now().strftime("%a, %d %B %Y"))
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 01
+
+def reverse_string(my_string):
+  for str in my_string[-1::-1]:
+    yield str
+
+# Reverse The String
+for c in reverse_string("Elzero"):
+  print(c)
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 02
+
+def mydecorator(func):
+    
+    def moka_coffe():
+        
+        print("Sugar Added From Decorators")
+        func()
+        print("####################")
+        
+        return moka_coffe
+  
+
+  
+@mydecorator   
+def make_tea():
+  return("Tea Created")
+  
+@mydecorator  
+def make_coffe():
+  return("Coffe Created")
+  
+
+print(make_tea())
+print(make_coffe())
+
+
+
+#------------------------------------------------------------------------------------------#
+
+# Error Handling & Debugging 
+# From 90 To 94 
+
+
+# تكليف 01
+NUM = input("Add Your Number ")
+
+if len(NUM) > 1:
+    raise IndexError ("Only One Character Allowed")
+elif NUM == 0:
+    print("ValueError: Number Must Be Larger Than 0")
+    
+    
+elif NUM == str :
+    raise Exception ("Only Numbers Allowed")    
+ 
+else:
+    
+    print("####################")
+    print(f"The Number Is {NUM}")
+    print("####################")
+    
+
+
+
+
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 03
+
+def calculate(num1, num2) -> int :
+  return num1 + num2
+
+print(calculate(20, 30))
+
+#------------------------------------------------------------------------------------------#
+
+
+
+#------------------------------------------------------------------------------------------#
+
+# تكليف 03
+
+# \+?\(\d{4}\)\s\d+-\d{4}
+# +(0100) 600-1234
+# +(0100) 60-1234
+# (0100) 6000-1234
+# 01006001234
+# 0100 600 1234
+# (0100) 600-1
+# (0100) 600-12
+
+#------------------------------------------------------------------------------------------#
+# تكليف 04
+
+# https?  => answer 1
+# [e-z]   => answer 2 
+# \wt.+   => answer 3
+# h.+     => answer 4
+# \w+p\w? => answer 5
+
+
+
+# http
+# https
+# abcd
+# abcd

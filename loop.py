@@ -1,12 +1,11 @@
-# mylist =  [1,2,3,54,0,()]
-def  my_all(*l):
-    for a in l :
-     if bool(a[0:-1]) == True:
-         return "True"
-     else:
-          return False   
-    
+# Create list baseball
+baseball = [180, 215, 210, 210, 188, 176, 209, 200]
 
-print(my_all(1,2,3,54,0,()))
+# Import the numpy package as np
+import numpy as np 
 
+# Create a numpy array from baseball: np_baseball
+np_baseball = np.array(baseball)
 
+# Print out type of np_baseball
+print(type(np_baseball))

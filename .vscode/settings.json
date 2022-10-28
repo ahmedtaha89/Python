@@ -1,0 +1,16 @@
+{
+
+    "python.autoComplete.extraPaths": [
+        "g:\\PYTHON\\my_mod.py"
+    ],
+    "python.analysis.extraPaths": [
+        "g:\\PYTHON\\my_mod.py"
+    ],
+    "cSpell.words": [
+        "moka",
+        "mydecorator",
+        "rembg",
+        "treka",
+        "tuble"
+    ]
+}
