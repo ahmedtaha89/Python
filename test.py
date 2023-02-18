@@ -959,6 +959,7 @@ print(h)
 
 
 # pop() Return number and remove  =>  لاخر حاجه اتضافت return في الداتا ستركشر المفروض انها بتعمل
+# pop() Return Random Number
 i = {"A", 0, True, 1, 2, 3, 4, 5}
 print(i.pop())
 print(i.pop())
